@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Summary.css'
 import { nahraniObjednavky } from './components/api';
+import config from './config.json';
 
 const Summary = ({ vybrane, reset }) => {
 
@@ -8,9 +9,9 @@ const Summary = ({ vybrane, reset }) => {
         <li>{number}</li>
     );
 
-    const date = new Date()
-    const expireDate = new Date(date);
-    expireDate.setDate(date.getDate() + 1);
+    const now = Date.now();
+    const delay = config.delay;
+    const expireDate = new Date(now + delay);
 
     const [progress, setProgress] = useState(0)
     const [email, setEmail] = useState("")
@@ -67,7 +68,7 @@ const Summary = ({ vybrane, reset }) => {
                     </svg>
                 </div>
                 <div className="">
-                    <strong>Vyzvedněte si je po nahlášení vašeho emailu {email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději {`${expireDate.toLocaleDateString()}`}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
+                    <strong>Vyzvedněte si je po nahlášení vašeho emailu {email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději {`${expireDate.toLocaleString()}`}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
                 </div>
                 <button type="button" onClick={() => setProgress(2)}>DEBUG: dalsi obraz</button>
             </div>

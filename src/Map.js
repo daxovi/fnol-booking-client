@@ -7,7 +7,6 @@ const Map = ({ click, vybrane, obsazene }) => {
     changeFloor(0);
   }, [])
   
-
   useEffect(() => {
     vybrane.forEach(ticket => {
       const place = document.getElementById(ticket);

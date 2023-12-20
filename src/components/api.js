@@ -1,7 +1,9 @@
+import config from '../config.json';
+
 export const vlozeniTicketu = async (ticket, email) => {
-    const date = new Date()
-    const expireDate = new Date(date);
-    expireDate.setDate(date.getDate() + 1);
+    const now = Date.now();
+    const delay = config.delay;
+    const expireDate = now + delay;
 
     try {
         const response = await fetch(process.env.REACT_APP_BACKEND + "/save-ticket", {
@@ -59,6 +61,7 @@ export const nahraniObjednavky = async (vybrane, email) => {
 
 export const nacteniTicketu = async () => {
     try {
+        const now = Date.now();
         const response = await fetch(process.env.REACT_APP_BACKEND + '/get-tickets')
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -66,8 +69,10 @@ export const nacteniTicketu = async () => {
         const data = await response.json();
         let arr = [];
         data.documents.forEach((ticket) => {
-            console.log(ticket.ticket)
+            if (now < ticket.date) {
+                console.log(ticket.ticket)
             arr = [...arr, ticket.ticket]
+            }
         })
         return arr;
     } catch (error) {
