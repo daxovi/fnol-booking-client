@@ -30,51 +30,44 @@ export const vlozeniTicketu = async (ticket, email) => {
 }
 
 export const nahraniObjednavky = async (vybrane, email) => {
-    // TODO2 získat klíč z databáze
     if (vybrane.length > 0) {
-        const obsazene = await nacteniTicketu()
-        console.log(obsazene);
-        console.log(vybrane);
+        try {
+            const obsazene = await nacteniTicketu();
 
-        let isTicketTaken = false;
+            let isTicketTaken = obsazene.some(obsazenyTicket => vybrane.includes(obsazenyTicket));
 
-        obsazene.forEach(obsazenyTicket => {
-            if (vybrane.includes(obsazenyTicket)) {
-                console.log("obsazeny ticket");
-                console.log(obsazenyTicket);
-                isTicketTaken = isTicketTaken || true
+            if (isTicketTaken) {
+                throw new Error('vybrané vstupenky jsou obsazené');
             }
-        });
 
-        if (isTicketTaken) {
-            return 2;
-        } else {
-            vybrane.forEach(ticket => {
-                vlozeniTicketu(ticket, email)
-            });
-            console.log("vráceno return 1");
-            return 1;
+            for (const ticket of vybrane) {
+                await vlozeniTicketu(ticket, email);
+            }
+            console.log("DEBUG: vráceno return 1");
+        } catch (error) {
+            console.error('Chyba při načítání nebo vkládání ticketů:', error);
+            throw error; // Znovu vyvolání chyby pro zachycení v nadřazené funkci
         }
     }
-    // TODO2 vrátit klíč databázi
 }
 
 export const nacteniTicketu = async () => {
+    const now = Date.now();
     try {
-        const now = Date.now();
         const response = await fetch(process.env.REACT_APP_BACKEND + '/get-tickets')
         if (!response.ok) {
             throw new Error('Network response was not ok');
+        } else {
+            const data = await response.json();
+            let arr = [];
+            data.documents.forEach((ticket) => {
+                if (now < ticket.date) {
+                    console.log(ticket.ticket)
+                    arr = [...arr, ticket.ticket]
+                }
+            })
+            return arr;
         }
-        const data = await response.json();
-        let arr = [];
-        data.documents.forEach((ticket) => {
-            if (now < ticket.date) {
-                console.log(ticket.ticket)
-            arr = [...arr, ticket.ticket]
-            }
-        })
-        return arr;
     } catch (error) {
         console.error('Error:', error);
         throw error;

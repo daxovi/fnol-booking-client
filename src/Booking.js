@@ -11,12 +11,12 @@ const Booking = () => {
 
     useEffect(() => {
         nacteniTicketu()
-        .then(data => {
-            setObsazene(data); // Nastaví získaná data
-          })
-          .catch(error => {
-            console.error('Error fetching data:', error);
-          });
+            .then(data => {
+                setObsazene(data); // Nastaví získaná data
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
     }, [])
 
     const handleClick = (e) => {
@@ -37,16 +37,21 @@ const Booking = () => {
         return !obsazene.includes(ticket)
     }
 
-    const reset = () => {
+    const reset = async () => {
         vybrane.forEach(ticket => {
             const place = document.getElementById(ticket);
             place.style.fill = "#00e000";
         });
-        nacteniTicketu()
-        .then((arr) => { 
+        try {
+            const arr = await nacteniTicketu();
+            console.log("DEBUG: nacteni ticketu v reset");
+            console.log(arr);
             setObsazene(arr);
             setVybrane([]);
-         })
+        } catch (error) {
+            console.error(error);
+        }
+
     }
 
     return (
