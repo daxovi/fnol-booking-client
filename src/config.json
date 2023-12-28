@@ -2,6 +2,7 @@
     "delay": 3600000,
     "_delay_5minut": 300000,
     "_delay_1hodina": 3600000,
-    "_delay_5dnu": 432000000
+    "_delay_5dnu": 432000000,
+    "email-predmet": "Děkujeme za rezervaci vstupenek na Ples FN Olomouc 2024"
   }
   

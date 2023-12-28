@@ -73,3 +73,24 @@ export const nacteniTicketu = async () => {
         throw error;
     }
 }
+
+export const odeslatEmail = async (to, subject, text) => {
+    try {
+        const response = await fetch(process.env.REACT_APP_BACKEND + '/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ to, subject, text })
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            console.log('E-mail byl úspěšně odeslán:', data);
+        } else {
+            console.error('Chyba při odesílání e-mailu:', data);
+        }
+    } catch (error) {
+        console.error('Chyba při odesílání e-mailu:', error);
+    }
+}

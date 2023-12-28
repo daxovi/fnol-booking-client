@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Summary.css'
-import { nahraniObjednavky } from './components/api';
+import { nahraniObjednavky, odeslatEmail } from './components/api';
 import config from './config.json';
 
 const Summary = ({ vybrane, reset }) => {
@@ -19,7 +19,7 @@ const Summary = ({ vybrane, reset }) => {
     const [isSaving, setIsSaving] = useState(false);
     const [saveSuccess, setSaveSuccess] = useState(null);
 
-    const sendTicket = async (event, vybrane, email) => {
+    const handleSubmit = async (event, vybrane, email) => {
         event.preventDefault();
 
         setIsSaving(true);
@@ -29,6 +29,12 @@ const Summary = ({ vybrane, reset }) => {
             await nahraniObjednavky(vybrane, email);
             console.log("DEBUG: sendTicket: kod pokracuje")
             setSaveSuccess(true);
+
+            const to = email;
+            const subject = config['email-predmet'];
+            const text = `Vaše vstupenky číslo ${vybrane.join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději ${expireDate.toLocaleString()}. Po tomto datu bude vaše rezervace stornovaná.`;
+
+            odeslatEmail(to, subject, text);
         } catch (error) {
             console.log("DEBUG: sendTicket: catch error")
             setSaveSuccess(false);
@@ -43,7 +49,7 @@ const Summary = ({ vybrane, reset }) => {
     useEffect(() => {
         if (!isSaving && vybrane.length === 1) {
             setIsSaving(false);
-        setSaveSuccess(null);
+            setSaveSuccess(null);
         }
     }, [vybrane])
 
@@ -60,7 +66,7 @@ const Summary = ({ vybrane, reset }) => {
                         <li>Celkem vstupenek: {vybrane.length}</li>
                     </ul>
                     <form onSubmit={(event) => {
-                        sendTicket(event, vybrane, email);
+                        handleSubmit(event, vybrane, email);
                     }}>
                         <div>
                             <label for="email">Váš e-mail: </label>
