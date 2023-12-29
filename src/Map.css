@@ -2,6 +2,27 @@
     fill: #FF00FF;
 }
 
+.misto::before {
+  content: ''; /* Důležité pro vytvoření pseudo-elementu */
+  display: inline-block; /* Umožní nám to nastavit šířku a výšku */
+  width: 13px; /* Šířka čtverečku */
+  height: 13px; /* Výška čtverečku */
+  margin-right: 5px; /* Přidáme trochu prostoru mezi čtvereček a text */
+}
+
+.misto-volne::before {
+  background-color: #23c258; /* Barva čtverečku */
+}
+
+.misto-obsazene::before {
+  background-color: #fa5f41; /* Barva čtverečku */
+}
+
+.misto-vybrane::before {
+  background-color: #ffbc2b; /* Barva čtverečku */
+}
+
+
 .floor-switch {
     width: 50%;
     display: flex;
@@ -23,8 +44,8 @@
     stroke-width: 2px;
 }
 
-.table {
-    fill: #b3b3b3;
+.table { 
+    fill: #bfbfbf;
 }
 
 .cls-5 {
@@ -52,3 +73,54 @@
     text-decoration: underline;
     
 }
+
+svg {
+  margin: 1em auto;
+  width: 98%;
+}
+
+/* SVG plan */
+.text {
+    font-family: OpenSans-Bold, 'Open Sans';
+    font-size: 17.7px;
+    font-weight: 700;
+    letter-spacing: -.02em;
+  }
+
+  .linka {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+  }
+
+  .zed {
+    fill: #4d4d4d;
+    stroke-width: 0px;
+  }
+
+  .stoly {
+    fill: #bfbfbf;
+    stroke-width: 0px;
+  }
+
+  .mista {
+    fill: #23c258;
+    stroke-width: 0px;
+  }
+
+  .popis-cerny {
+    font-family: OpenSans, 'Open Sans';
+    font-size: 24px;
+    color: black;
+  }
+
+  .popis-sedy {
+    font-family: OpenSans, 'Open Sans';
+    font-size: 24px;
+    fill: #e0e4ea;
+  }
+
+  .parket {
+    fill: #e0e4ea;
+    stroke-width: 0px;
+  }

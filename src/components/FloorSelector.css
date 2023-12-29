@@ -1,0 +1,33 @@
+.floor-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #F4F6F9;
+    color: #006d93;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    padding: 20px 40px;
+    border-radius:50vh;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+.btn:hover {
+    color: #17c3e6;
+}
+
+.btn-active {
+    background-color: #17c3e6;
+    color: white;
+}
+
+.btn-active:hover {
+    color: white;
+    cursor: auto;
+}

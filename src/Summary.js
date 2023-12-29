@@ -59,11 +59,10 @@ const Summary = ({ vybrane, reset }) => {
             {!isSaving && saveSuccess === null && // Zadávání emailu
                 <div className="summary">
                     <div className="title">
-                        Vybrané vstupenky:
+                        Vybrané vstupenky ({vybrane.length} vstupenek)
                     </div>
                     <ul>
                         {listItems}
-                        <li>Celkem vstupenek: {vybrane.length}</li>
                     </ul>
                     <form onSubmit={(event) => {
                         handleSubmit(event, vybrane, email);

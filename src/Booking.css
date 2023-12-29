@@ -10,10 +10,16 @@ body {
 
 .row {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     flex-grow: 2;
 }
 
 .map {
     flex: 1;
+}
+
+p {
+    font-style: italic;
+    margin: 0px;
 }
