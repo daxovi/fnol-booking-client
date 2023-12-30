@@ -5314,7 +5314,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                height="132.29"
                id="rect7382" />
             <polygon
-               class=""
+               class="linka"
                points="296.35 283.94 281.39 303.94 266.43 283.94 246.43 268.98 266.43 254.02 281.39 234.02 296.35 254.02 316.35 268.98 296.35 283.94"
                id="polygon7384" />
             <polygon
