@@ -10,11 +10,11 @@ const Summary = ({ vybrane, reset }) => {
         <li key={number}>{number}</li>
     );
 
-    const now = Date.now();
-    const delay = config.delay;
-    const expireDate = new Date(now + delay);
+    var datum = new Date();
+    datum.setDate(datum.getDate() + config.delay_dny); // přidání dní
+    datum.setHours(23, 59, 0, 0); // nastavení na půlnoc
+    const expireDate = datum.getTime();
 
-    const [progress, setProgress] = useState(0)
     const [email, setEmail] = useState("")
 
     const [isSaving, setIsSaving] = useState(false);
@@ -53,6 +53,11 @@ const Summary = ({ vybrane, reset }) => {
             setSaveSuccess(null);
         }
     }, [vybrane])
+
+    const zobrazitDatum = (timestamp) => { 
+            var datum = new Date(timestamp);
+            return datum.toLocaleDateString('cs-CZ'); // pro české formátování
+     }
 
     return (
         <div className="">
@@ -104,7 +109,7 @@ const Summary = ({ vybrane, reset }) => {
                     </div>
                     <div className="status">
                     Vstupenky jsou úspěšně rezervované! <br />
-                        <strong>Vyzvedněte si je po nahlášení vašeho emailu {email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději {`${expireDate.toLocaleString()}`}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
+                        <strong>Vyzvedněte si je po nahlášení vašeho emailu {email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději {`${zobrazitDatum(expireDate)}`}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
                     </div>
                 </div>
             }

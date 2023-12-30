@@ -1,9 +1,10 @@
 import config from '../config.json';
 
 export const vlozeniTicketu = async (ticket, email) => {
-    const now = Date.now();
-    const delay = config.delay;
-    const expireDate = now + delay;
+    var datum = new Date();
+    datum.setDate(datum.getDate() + config.delay_dny); // přidání dní
+    datum.setHours(23, 59, 0, 0); // nastavení na půlnoc
+    const expireDate = datum.getTime();
 
     try {
         const response = await fetch(process.env.REACT_APP_BACKEND + "/save-ticket", {
@@ -43,7 +44,6 @@ export const nahraniObjednavky = async (vybrane, email) => {
             for (const ticket of vybrane) {
                 await vlozeniTicketu(ticket, email);
             }
-            console.log("DEBUG: vráceno return 1");
         } catch (error) {
             console.error('Chyba při načítání nebo vkládání ticketů:', error);
             throw error; // Znovu vyvolání chyby pro zachycení v nadřazené funkci
@@ -62,7 +62,6 @@ export const nacteniTicketu = async () => {
             let arr = [];
             data.documents.forEach((ticket) => {
                 if (now < ticket.date) {
-                    console.log(ticket.ticket)
                     arr = [...arr, ticket.ticket]
                 }
             })

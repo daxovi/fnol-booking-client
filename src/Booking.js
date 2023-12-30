@@ -18,7 +18,9 @@ const Booking = () => {
         nacteniTicketu()
             .then(data => {
                 setObsazene(data); // Nastaví získaná data
-                setIsLoading(false);
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
@@ -55,7 +57,9 @@ const Booking = () => {
             console.log(arr);
             setObsazene(arr);
             setVybrane([]);
-            setIsLoading(false);
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1000);
         } catch (error) {
             console.error(error);
         }
