@@ -94,3 +94,9 @@ header {
   height: 100%;
   width: auto;
 }
+
+@media (max-width: 550px) {
+  .social {
+    display: none;
+  }
+}

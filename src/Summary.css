@@ -1,5 +1,9 @@
 
-
+.summary-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
 ul {
     padding-inline-start: 0px;
     margin-top: 0.3em;
@@ -41,6 +45,18 @@ input[type=email] {
 }
 
 .icon {
-    text-align: center;
-    margin: 20px;
+    width: 5em;
 }
+
+.status {
+    padding-bottom: 0.5em;
+}
+
+@media (max-width: 550px) {
+    .summary-with-icon {
+      flex-direction: column;
+    }
+    .icon {
+        width: 50%;
+    }
+  }

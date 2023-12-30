@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className='title-bar'>
+    <footer className='footer-bar'>
         <div class="container">
             <div class="bar">
                 Ples FN Olomouc

@@ -93,6 +93,28 @@ svg {
     stroke-miterlimit: 10;
   }
 
+  .circle {
+    stroke: #000;
+    animation-duration: 2s;
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes loading {
+    from {
+      stroke: #000;
+    }
+
+    50% {
+      stroke: #bfbfbf;
+    }
+  
+    to {
+      padding-top: 0px;
+      stroke: #000;
+    }
+  }
+
   .zed {
     fill: #4d4d4d;
     stroke-width: 0px;
@@ -114,6 +136,11 @@ svg {
     color: black;
   }
 
+  .popis-center {
+    text-align: center;
+    text-anchor:middle;
+  }
+
   .popis-sedy {
     font-family: OpenSans, 'Open Sans';
     font-size: 24px;
@@ -124,3 +151,10 @@ svg {
     fill: #e0e4ea;
     stroke-width: 0px;
   }
+
+  @media (max-width: 550px) {
+    svg {
+      width: 100%;
+    }
+  }
+

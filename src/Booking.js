@@ -11,11 +11,14 @@ const Booking = () => {
     const [obsazene, setObsazene] = useState([]);
     const [vybrane, setVybrane] = useState([]);
     const [floor, setFloor] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        setIsLoading(true);
         nacteniTicketu()
             .then(data => {
                 setObsazene(data); // Nastaví získaná data
+                setIsLoading(false);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
@@ -41,6 +44,7 @@ const Booking = () => {
     }
 
     const reset = async () => {
+        setIsLoading(true);
         vybrane.forEach(ticket => {
             const place = document.getElementById(ticket);
             place.style.fill = "#23c258";
@@ -51,6 +55,7 @@ const Booking = () => {
             console.log(arr);
             setObsazene(arr);
             setVybrane([]);
+            setIsLoading(false);
         } catch (error) {
             console.error(error);
         }
@@ -71,7 +76,7 @@ const Booking = () => {
                 <p>
                     Nyní přejděte k výběru vašich konkrétních míst. Na interaktivní mapě sálu klikněte na místa, která si přejete rezervovat. Při výběru můžete vidět dostupnost jednotlivých míst a jejich umístění ve vztahu k tanečnímu parketu. Každé vybrané místo bude automaticky přidáno do vaší rezervace. Pokud si chcete vybrat více míst vedle sebe, jednoduše na ně postupně klikněte.
                 </p>
-                <Map click={handleClick} vybrane={vybrane} obsazene={obsazene} floor={floor} />
+                <Map click={handleClick} vybrane={vybrane} obsazene={obsazene} floor={floor} isLoading={isLoading} />
                 <Step number="3" name="Dokončete rezervaci" />
                 <p>
                     Téměř hotovo! Zkontrolujte svůj výběr vstupenek níže. Pro dokončení rezervace zadejte svůj email a klikněte na 'Rezervovat'.
