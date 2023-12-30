@@ -16,8 +16,13 @@ ul {
 ul li {
     display: block;
     font-weight: bold;
+    background-image: url('./ticket.jpg');
+    background-size: cover;
+    color: white;
     background-color: #EBEFF5;
-    padding: 10px 30px;
+    padding: 10px;
+    padding-left: 45px;
+    box-shadow: 1px 1px 3px gray;
 }
 
 input[type=submit] {

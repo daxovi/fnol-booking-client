@@ -1,71 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   id="Vrstva_2"
-   data-name="Vrstva 2"
-   viewBox="0 0 1440 1080"
-   version="1.1"
-   sodipodi:docname="loading.svg"
-   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7467"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="0.6510226"
-     inkscape:cx="398.60367"
-     inkscape:cy="562.96049"
-     inkscape:window-width="2196"
-     inkscape:window-height="1205"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="Vrstva_2" />
-  <defs
-     id="defs5736">
-    <style
-       id="style5734">.popis-cerny { font-family: OpenSans, 'Open Sans';        font-size: 24px;        color: black; }
-.popis-sedy { font-family: OpenSans, 'Open Sans';        font-size: 24px;        fill: #b3b3b3; }
-.parket { fill: #ccc;        stroke-width: 0px; }
-.text { font-family: OpenSans-Bold, 'Open Sans';        font-size: 17.7px;        font-weight: 700; }
-.stoly { fill: #b3b3b3;        stroke-width: 0px; }
-.linka { fill: none;        stroke: #000;        stroke-miterlimit: 10; }
-.zed { fill: #4d4d4d;        stroke-width: 0px; }
-.mista { fill: #00e000;        stroke-width: 0px; }
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Vrstva_2_00000023988700859362338440000005857529236059763127_" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 1080"
+	 style="enable-background:new 0 0 1440 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'OpenSans';}
+	.st1{font-size:24px;}
+	.st2{fill:none;stroke:#000000;stroke-miterlimit:10;}
 </style>
-  </defs>
-
-    <!-- 
-    začátek exportu 
--->
-
-  <text
-     class="popis-cerny"
-     id="text7398"
-     style="text-align:center;baseline-shift:baseline;text-anchor:middle"
-     x="766.53607"
-     y="616.73993"><tspan
-       x="720.3349"
-       y="616.73993"
-       id="tspan7396"
-       class="popis-cerny">načítání</tspan></text>
-
-  <circle
-     id="path1263"
-     cx="721.53607"
-     cy="453.1333"
-     r="115.20338"
-     class="linka" />
-
-       <!-- 
-    konec exportu 
--->
+<sodipodi:namedview  bordercolor="#000000" borderopacity="0.25" id="namedview7467" inkscape:current-layer="Vrstva_2" inkscape:cx="398.60367" inkscape:cy="562.96049" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1205" inkscape:window-maximized="0" inkscape:window-width="2196" inkscape:window-x="0" inkscape:window-y="25" inkscape:zoom="0.6510226" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<text transform="matrix(1 0 0 1 676.2372 616.7399)" class="st0 st1">načítání</text>
+<g id="circle">
+	<line class="st2" x1="721.5" y1="548.3" x2="721.5" y2="568.3"/>
+	<line class="st2" x1="721.5" y1="337.9" x2="721.5" y2="358"/>
+	<line class="st2" x1="626.4" y1="453.1" x2="606.3" y2="453.1"/>
+	<line class="st2" x1="836.7" y1="453.1" x2="816.7" y2="453.1"/>
+	<line class="st2" x1="788.8" y1="520.4" x2="803" y2="534.6"/>
+	<line class="st2" x1="640.1" y1="371.7" x2="654.3" y2="385.9"/>
+	<line class="st2" x1="654.3" y1="520.4" x2="640.1" y2="534.6"/>
+	<line class="st2" x1="803" y1="371.7" x2="788.8" y2="385.9"/>
+	<line class="st2" x1="803.9" y1="500.7" x2="821.3" y2="510.7"/>
+	<line class="st2" x1="621.8" y1="395.5" x2="639.1" y2="405.6"/>
+	<line class="st2" x1="674" y1="535.5" x2="663.9" y2="552.9"/>
+	<line class="st2" x1="779.1" y1="353.4" x2="769.1" y2="370.7"/>
+	<line class="st2" x1="813.4" y1="428.5" x2="832.8" y2="423.3"/>
+	<line class="st2" x1="610.3" y1="483" x2="629.6" y2="477.8"/>
+	<line class="st2" x1="746.2" y1="545" x2="751.4" y2="564.4"/>
+	<line class="st2" x1="691.7" y1="341.9" x2="696.9" y2="361.2"/>
+	<line class="st2" x1="639.1" y1="500.7" x2="621.8" y2="510.7"/>
+	<line class="st2" x1="821.3" y1="395.5" x2="803.9" y2="405.6"/>
+	<line class="st2" x1="674" y1="370.7" x2="663.9" y2="353.4"/>
+	<line class="st2" x1="779.1" y1="552.9" x2="769.1" y2="535.5"/>
+	<line class="st2" x1="696.9" y1="545" x2="691.7" y2="564.4"/>
+	<line class="st2" x1="751.4" y1="341.9" x2="746.2" y2="361.2"/>
+	<line class="st2" x1="629.6" y1="428.5" x2="610.3" y2="423.3"/>
+	<line class="st2" x1="832.8" y1="483" x2="813.4" y2="477.8"/>
+	<line class="st2" x1="815.9" y1="465.6" x2="835.8" y2="468.2"/>
+	<line class="st2" x1="607.3" y1="438.1" x2="627.2" y2="440.7"/>
+	<line class="st2" x1="709.1" y1="547.5" x2="706.5" y2="567.4"/>
+	<line class="st2" x1="736.6" y1="338.9" x2="734" y2="358.8"/>
+	<line class="st2" x1="797" y1="395.2" x2="812.9" y2="383"/>
+	<line class="st2" x1="630.1" y1="523.3" x2="646" y2="511.1"/>
+	<line class="st2" x1="779.5" y1="528.6" x2="791.7" y2="544.5"/>
+	<line class="st2" x1="651.4" y1="361.7" x2="663.6" y2="377.6"/>
+	<line class="st2" x1="779.5" y1="377.6" x2="791.7" y2="361.7"/>
+	<line class="st2" x1="651.4" y1="544.5" x2="663.6" y2="528.6"/>
+	<line class="st2" x1="797" y1="511.1" x2="812.9" y2="523.3"/>
+	<line class="st2" x1="630.1" y1="383" x2="646" y2="395.2"/>
+	<line class="st2" x1="709.1" y1="358.8" x2="706.5" y2="338.9"/>
+	<line class="st2" x1="736.6" y1="567.4" x2="734" y2="547.5"/>
+	<line class="st2" x1="815.9" y1="440.7" x2="835.8" y2="438.1"/>
+	<line class="st2" x1="607.3" y1="468.2" x2="627.2" y2="465.6"/>
+	<line class="st2" x1="757.9" y1="541" x2="765.6" y2="559.6"/>
+	<line class="st2" x1="677.4" y1="346.7" x2="685.1" y2="365.2"/>
+	<line class="st2" x1="633.6" y1="489.5" x2="615.1" y2="497.2"/>
+	<line class="st2" x1="828" y1="409" x2="809.4" y2="416.7"/>
+	<line class="st2" x1="809.4" y1="489.5" x2="828" y2="497.2"/>
+	<line class="st2" x1="615.1" y1="409" x2="633.6" y2="416.7"/>
+	<line class="st2" x1="685.1" y1="541" x2="677.4" y2="559.6"/>
+	<line class="st2" x1="765.6" y1="346.7" x2="757.9" y2="365.2"/>
+	<line class="st2" x1="727.8" y1="548.1" x2="729.1" y2="568.1"/>
+	<line class="st2" x1="714" y1="338.2" x2="715.3" y2="358.2"/>
+	<line class="st2" x1="626.6" y1="459.4" x2="606.6" y2="460.7"/>
+	<line class="st2" x1="836.5" y1="445.6" x2="816.5" y2="446.9"/>
+	<line class="st2" x1="793.1" y1="515.9" x2="808.2" y2="529.1"/>
+	<line class="st2" x1="634.9" y1="377.2" x2="650" y2="390.4"/>
+	<line class="st2" x1="658.8" y1="524.7" x2="645.6" y2="539.7"/>
+	<line class="st2" x1="797.5" y1="366.5" x2="784.3" y2="381.6"/>
+	<line class="st2" x1="806.9" y1="495.2" x2="824.9" y2="504.1"/>
+	<line class="st2" x1="618.2" y1="402.2" x2="636.2" y2="411"/>
+	<line class="st2" x1="679.5" y1="538.5" x2="670.6" y2="556.5"/>
+	<line class="st2" x1="772.5" y1="349.8" x2="763.6" y2="367.8"/>
+	<line class="st2" x1="811.6" y1="422.5" x2="830.6" y2="416.1"/>
+	<line class="st2" x1="612.4" y1="490.2" x2="631.4" y2="483.7"/>
+	<line class="st2" x1="752.1" y1="543.2" x2="758.6" y2="562.2"/>
+	<line class="st2" x1="684.5" y1="344" x2="691" y2="363"/>
+	<line class="st2" x1="642.4" y1="506" x2="625.7" y2="517.1"/>
+	<line class="st2" x1="817.3" y1="389.1" x2="800.7" y2="400.3"/>
+	<line class="st2" x1="668.7" y1="374" x2="657.5" y2="357.3"/>
+	<line class="st2" x1="785.5" y1="548.9" x2="774.4" y2="532.2"/>
+	<line class="st2" x1="703" y1="546.5" x2="699.1" y2="566.1"/>
+	<line class="st2" x1="744" y1="340.1" x2="740.1" y2="359.8"/>
+	<line class="st2" x1="628.2" y1="434.6" x2="608.5" y2="430.7"/>
+	<line class="st2" x1="834.5" y1="475.6" x2="814.9" y2="471.7"/>
+	<line class="st2" x1="816.5" y1="459.4" x2="836.5" y2="460.7"/>
+	<line class="st2" x1="606.6" y1="445.6" x2="626.6" y2="446.9"/>
+	<line class="st2" x1="715.3" y1="548.1" x2="714" y2="568.1"/>
+	<line class="st2" x1="729.1" y1="338.2" x2="727.8" y2="358.2"/>
+	<line class="st2" x1="793.1" y1="390.4" x2="808.2" y2="377.2"/>
+	<line class="st2" x1="634.9" y1="529.1" x2="650" y2="515.9"/>
+	<line class="st2" x1="784.3" y1="524.7" x2="797.5" y2="539.7"/>
+	<line class="st2" x1="645.6" y1="366.5" x2="658.8" y2="381.6"/>
+	<line class="st2" x1="774.4" y1="374" x2="785.5" y2="357.3"/>
+	<line class="st2" x1="657.5" y1="548.9" x2="668.7" y2="532.2"/>
+	<line class="st2" x1="800.7" y1="506" x2="817.3" y2="517.1"/>
+	<line class="st2" x1="625.7" y1="389.1" x2="642.4" y2="400.3"/>
+	<line class="st2" x1="703" y1="359.8" x2="699.1" y2="340.1"/>
+	<line class="st2" x1="744" y1="566.1" x2="740.1" y2="546.5"/>
+	<line class="st2" x1="814.9" y1="434.6" x2="834.5" y2="430.7"/>
+	<line class="st2" x1="608.5" y1="475.6" x2="628.2" y2="471.7"/>
+	<line class="st2" x1="763.6" y1="538.5" x2="772.5" y2="556.5"/>
+	<line class="st2" x1="670.6" y1="349.8" x2="679.5" y2="367.8"/>
+	<line class="st2" x1="636.2" y1="495.2" x2="618.2" y2="504.1"/>
+	<line class="st2" x1="824.9" y1="402.2" x2="806.9" y2="411"/>
+	<line class="st2" x1="811.6" y1="483.7" x2="830.6" y2="490.2"/>
+	<line class="st2" x1="612.4" y1="416.1" x2="631.4" y2="422.5"/>
+	<line class="st2" x1="691" y1="543.2" x2="684.5" y2="562.2"/>
+	<line class="st2" x1="758.6" y1="344" x2="752.1" y2="363"/>
+</g>
 </svg>

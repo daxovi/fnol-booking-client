@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ticket from './ticket.jpg';
 import './Summary.css'
 import { nahraniObjednavky, odeslatEmail } from './components/api';
 import config from './config.json';

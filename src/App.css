@@ -37,7 +37,9 @@ header {
   z-index: 100;
   padding-bottom: 35px;
   padding-top: 35px;
-  background: linear-gradient(180deg, #f2f5f8 0%, #fafbfd 100%);
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .title-bar h1 {

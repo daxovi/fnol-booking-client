@@ -94,24 +94,20 @@ svg {
   }
 
   .circle {
+    transform-origin: 721.5px 453px; 
     stroke: #000;
-    animation-duration: 2s;
+    animation-duration: 10s;
   animation-name: loading;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   }
 
   @keyframes loading {
     from {
-      stroke: #000;
+      transform: rotate(0deg);
     }
-
-    50% {
-      stroke: #bfbfbf;
-    }
-  
     to {
-      padding-top: 0px;
-      stroke: #000;
+      transform: rotate(359deg);
     }
   }
 
