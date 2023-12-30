@@ -33,7 +33,7 @@ const Summary = ({ vybrane, reset }) => {
 
             const to = email;
             const subject = config['email-predmet'];
-            const text = `Vaše vstupenky číslo ${vybrane.join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději ${expireDate.toLocaleString()}. Po tomto datu bude vaše rezervace stornovaná.`;
+            const text = `Vaše vstupenky číslo ${vybrane.join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
 
             odeslatEmail(to, subject, text);
         } catch (error) {
