@@ -1,35 +1,5 @@
 import config from '../config.json';
 
-export const vlozeniTicketu = async (ticket, email) => {
-    var datum = new Date();
-    datum.setDate(datum.getDate() + config.delay_dny); // přidání dní
-    datum.setHours(23, 59, 0, 0); // nastavení na půlnoc
-    const expireDate = datum.getTime();
-
-    try {
-        const response = await fetch(process.env.REACT_APP_BACKEND + "/save-ticket", {
-            method: "post",
-            headers: {
-                "Accept": "application/json",
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify({
-                ticket: ticket,
-                email: email,
-                notes: "",
-                date: expireDate
-            })
-        })
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Error:', error);
-        throw error;
-    }
-}
-
 export const nahraniObjednavky = async (vybrane, email) => {
     if (vybrane.length > 0) {
         try {
@@ -38,18 +8,43 @@ export const nahraniObjednavky = async (vybrane, email) => {
             let isTicketTaken = obsazene.some(obsazenyTicket => vybrane.includes(obsazenyTicket));
 
             if (isTicketTaken) {
-                throw new Error('vybrané vstupenky jsou obsazené');
+                throw new Error('Vybrané vstupenky jsou obsazené');
             }
 
-            for (const ticket of vybrane) {
-                await vlozeniTicketu(ticket, email);
+            var datum = new Date();
+            datum.setDate(datum.getDate() + config.delay_dny); // přidání dní
+            datum.setHours(23, 59, 0, 0); // nastavení na půlnoc
+            const expireDate = datum.getTime();
+
+            // Příprava pole objektů pro vložení
+            const ticketObjects = vybrane.map(ticket => ({
+                ticket: ticket,
+                email: email,
+                notes: "",
+                date: expireDate
+            }));
+
+            const response = await fetch(process.env.REACT_APP_BACKEND + "/save-ticket", {
+                method: "post",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify(ticketObjects) // Odeslání celého pole ticketů
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
             }
+            return await response.json();
+
         } catch (error) {
             console.error('Chyba při načítání nebo vkládání ticketů:', error);
-            throw error; // Znovu vyvolání chyby pro zachycení v nadřazené funkci
+            throw error;
         }
     }
-}
+};
+
 
 export const nacteniTicketu = async () => {
     const now = Date.now();
