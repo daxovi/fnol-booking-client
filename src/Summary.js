@@ -33,7 +33,7 @@ const Summary = ({ vybrane, reset }) => {
 
             const to = email;
             const subject = config['email-predmet'];
-            const text = `Vaše vstupenky číslo ${vybrane.join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
+            const text = `Vaše vstupenky číslo ${vybrane.join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
             const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${vybrane.join(", ")}) vyzvedněte prosím <b>nejpozději dne ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
             odeslatEmail(to, subject, text, html);
         } catch (error) {
@@ -109,7 +109,7 @@ const Summary = ({ vybrane, reset }) => {
                     </div>
                     <div className="status">
                     Vstupenky jsou úspěšně rezervované! <br />
-                        <strong>Vyzvedněte si je po nahlášení vašeho emailu {email} na pokladně FN Olomouc v budově WA v pracovní dny od 7 do 15.30, nejpozději {`${zobrazitDatum(expireDate)}`}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
+                        <strong>Vaše rezervované vstupenky vyzvedněte prosím nejpozději dne {`${zobrazitDatum(expireDate)}`} na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
                     </div>
                 </div>
             }

@@ -42,6 +42,8 @@ export const nahraniObjednavky = async (vybrane, email) => {
             console.error('Chyba při načítání nebo vkládání ticketů:', error);
             throw error;
         }
+    } else {
+        throw new Error('Nejsou vybrané žádné vstupenky');
     }
 };
 
