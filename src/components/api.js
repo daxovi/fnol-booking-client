@@ -68,14 +68,15 @@ export const nacteniTicketu = async () => {
     }
 }
 
-export const odeslatEmail = async (to, subject, text) => {
+export const odeslatEmail = async (to, subject, text, html) => {
     try {
+        const body = { to, subject, text, html };
         const response = await fetch(process.env.REACT_APP_BACKEND + '/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ to, subject, text })
+            body: JSON.stringify(body)
         });
 
         const data = await response.json();

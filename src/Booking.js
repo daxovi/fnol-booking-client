@@ -68,17 +68,17 @@ const Booking = () => {
     return (
         <div className='booking'>
             <div>
-                Vítejte v online rezervačním systému pro nadcházející ples Fakultní nemocnice Olomouc! Jsme nadšeni, že máte zájem strávit tento výjimečný večer spolu s námi. Abychom vám zajištění vstupenek učinili co nejpohodlnějším, připravili jsme pro vás tento jednoduchý rezervační proces. V následujících krocích si budete moci vybrat z různých typů míst, ať už preferujete být v srdci dění na tanečním parketu nebo si užívat večer s výhledem z galerie. Postupujte podle jednotlivých kroků a rezervujte si místa, která vám zajistí nezapomenutelný zážitek z našeho plesu. Děkujeme, že jste si pro váš speciální večer vybrali právě nás a těšíme se na vaši účast!
+            Vítejte v rezervačním systému pro 23. reprezentační ples Fakultní nemocnice Olomouc! Máme radost, že máte zájem strávit tento výjimečný večer spolu s námi. Aby pro vás bylo zajištění co nejpohodlnější, připravili jsme pro vás jednoduchý rezervační proces. V několika krocích si budete moci vybrat z různých typů míst, ať už upřednostňujete být v srdci dění na tanečním parketu nebo si užívat večer s výhledem z galerie. Postupujte krok po kroku a rezervujte si místa, která preferujete.
             </div>
             <div className="row">
                 <Step number="1" name="Vyberte si podlaží" />
                 <p>
-                    Začněte výběrem typu místa. Máte na výběr mezi místem v přízemí přímo u tanečního parketu, kde budete mít bezprostřední zážitek z plesu a budete v centru dění, nebo si můžete vybrat místo na galerii, které nabízí klidnější prostředí s fantastickým výhledem na taneční parket a celý sál.
+                Začněte výběrem typu místa. Volit můžete mezi přízemím, tedy přímo u tanečního parketu, nebo galerií, která nabízí klidnější prostředí s výhledem na celý sál.
                 </p>
                 <FloorSelector floor={floor} setFloor={setFloor} />
                 <Step number="2" name="Vyberte si místa" />
                 <p>
-                    Nyní přejděte k výběru vašich konkrétních míst. Na interaktivní mapě sálu klikněte na místa, která si přejete rezervovat. Při výběru můžete vidět dostupnost jednotlivých míst a jejich umístění ve vztahu k tanečnímu parketu. Každé vybrané místo bude automaticky přidáno do vaší rezervace. Pokud si chcete vybrat více míst vedle sebe, jednoduše na ně postupně klikněte.
+                Nyní přejděte k výběru konkrétních míst. Na interaktivním plánu sálu klikněte na místa, která si přejete rezervovat. Při výběru můžete vidět dostupnost míst a jejich vazbu na taneční parket. Každé vybrané místo bude automaticky přidáno do vaší rezervace. Pokud si chcete vybrat více míst vedle sebe, jednoduše na ně postupně klikněte.
                 </p>
                 <Map click={handleClick} vybrane={vybrane} obsazene={obsazene} floor={floor} isLoading={isLoading} />
                 <Step number="3" name="Dokončete rezervaci" />
