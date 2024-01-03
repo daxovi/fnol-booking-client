@@ -6,8 +6,17 @@ import config from './config.json';
 
 const Summary = ({ vybrane, reset }) => {
 
+    const replaceUnderscore = (string) => { 
+        return string.replace("_", "/");
+     }
+
+     const replaceUnderscoreArray = (array) => { 
+        const newArray = array.map((x) => replaceUnderscore(x));
+        return newArray;
+      }
+
     const listItems = vybrane.map((number) =>
-        <li key={number}>{number}</li>
+        <li key={number}>{replaceUnderscore(number)}</li>
     );
 
     var datum = new Date();
@@ -28,19 +37,16 @@ const Summary = ({ vybrane, reset }) => {
 
         try {
             await nahraniObjednavky(vybrane, email);
-            console.log("DEBUG: sendTicket: kod pokracuje")
             setSaveSuccess(true);
 
             const to = email;
             const subject = config['email-predmet'];
-            const text = `Vaše vstupenky číslo ${vybrane.join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
-            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${vybrane.join(", ")}) vyzvedněte prosím <b>nejpozději dne ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
+            const text = `Vaše vstupenky číslo ${replaceUnderscoreArray(vybrane).join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
+            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${replaceUnderscoreArray(vybrane).join(", ")}) vyzvedněte prosím <b>nejpozději dne ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
             odeslatEmail(to, subject, text, html);
         } catch (error) {
-            console.log("DEBUG: sendTicket: catch error")
             setSaveSuccess(false);
         } finally {
-            console.log("DEBUG: finally")
             setTimeout(() => {
                 reset();
                 setIsSaving(false);
@@ -65,7 +71,7 @@ const Summary = ({ vybrane, reset }) => {
             {!isSaving && saveSuccess === null && // Zadávání emailu
                 <div className="summary">
                     <div className="title">
-                        Vybrané vstupenky ({vybrane.length} vstupenek)
+                        Vybrané vstupenky ({vybrane.length} vstupenek, číslo stolu/číslo vstupenky)
                     </div>
                     <ul>
                         {listItems}

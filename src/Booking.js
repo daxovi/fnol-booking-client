@@ -53,8 +53,6 @@ const Booking = () => {
         });
         try {
             const arr = await nacteniTicketu();
-            console.log("DEBUG: nacteni ticketu v reset");
-            console.log(arr);
             setObsazene(arr);
             setVybrane([]);
             setTimeout(() => {
