@@ -54,14 +54,14 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
    const changeFloor = (patro) => {
       if (!isLoading) {
          const plocha = document.getElementById("Vrstva_plocha");
-      const galerie = document.getElementById("Vrstva_galerie");
-      if (patro == 0) {
-         plocha.style.display = "block";
-         galerie.style.display = "none";
-      } else {
-         plocha.style.display = "none";
-         galerie.style.display = "block";
-      }
+         const galerie = document.getElementById("Vrstva_galerie");
+         if (patro == 0) {
+            plocha.style.display = "block";
+            galerie.style.display = "none";
+         } else {
+            plocha.style.display = "none";
+            galerie.style.display = "block";
+         }
       }
    }
 
@@ -5594,7 +5594,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
 
 
                <rect
-                  id="101"
+                  id="101_548"
                   data-name="101"
                   class="mista"
                   x="12.87"
@@ -5603,7 +5603,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   height="16.4"
                   transform="translate(-619.59 274.1) rotate(-45)" />
                <rect
-                  id="104"
+                  id="101_550"
                   data-name="104"
                   class="mista"
                   x="45.49"
@@ -5612,7 +5612,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   height="16.4"
                   transform="translate(-633.1 306.71) rotate(-45)" />
                <rect
-                  id="103"
+                  id="101_547"
                   data-name="103"
                   class="mista"
                   x="12.87"
@@ -5621,7 +5621,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   height="16.4"
                   transform="translate(-642.65 283.65) rotate(-45)" />
                <rect
-                  id="102"
+                  id="101_549"
                   data-name="102"
                   class="mista"
                   x="45.49"
@@ -5636,7 +5636,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-600.8 319.46) rotate(-45)"
-                  id="rect1129" />
+                  id="110_584" />
                <rect
                   class="mista"
                   x="109.63"
@@ -5644,7 +5644,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-614.31 352.07) rotate(-45)"
-                  id="rect1131" />
+                  id="110_586" />
                <rect
                   class="mista"
                   x="77.02"
@@ -5652,7 +5652,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-623.86 329.01) rotate(-45)"
-                  id="rect1133" />
+                  id="110_583" />
                <rect
                   class="mista"
                   x="109.63"
@@ -5660,7 +5660,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-591.25 342.52) rotate(-45)"
-                  id="rect1135" />
+                  id="110_585" />
                <rect
                   class="mista"
                   x="143.76"
@@ -5668,7 +5668,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-581.25 366.65) rotate(-45)"
-                  id="rect1137" />
+                  id="114_600" />
                <rect
                   class="mista"
                   x="176.37"
@@ -5676,7 +5676,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-594.76 399.26) rotate(-45)"
-                  id="rect1139" />
+                  id="114_602" />
                <rect
                   class="mista"
                   x="143.76"
@@ -5684,7 +5684,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-604.31 376.2) rotate(-45)"
-                  id="rect1141" />
+                  id="114_599" />
                <rect
                   class="mista"
                   x="176.37"
@@ -5692,7 +5692,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-571.7 389.71) rotate(-45)"
-                  id="rect1143" />
+                  id="114_601" />
                <rect
                   class="mista"
                   x="77.02"
@@ -5700,7 +5700,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-555.44 300.67) rotate(-45)"
-                  id="rect1145" />
+                  id="111_588" />
                <rect
                   class="mista"
                   x="109.63"
@@ -5708,7 +5708,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-568.95 333.28) rotate(-45)"
-                  id="rect1147" />
+                  id="111_590" />
                <rect
                   class="mista"
                   x="77.02"
@@ -5716,7 +5716,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-578.51 310.22) rotate(-45)"
-                  id="rect1149" />
+                  id="111_587" />
                <rect
                   class="mista"
                   x="109.63"
@@ -5724,9 +5724,9 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-545.89 323.73) rotate(-45)"
-                  id="rect1151" />
+                  id="111_589" />
                <rect
-                  id="105"
+                  id="102_552"
                   data-name="105"
                   class="mista"
                   x="25.02"
@@ -5735,7 +5735,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   height="16.4"
                   transform="translate(-504.69 236.57) rotate(-45)" />
                <rect
-                  id="_108"
+                  id="102_554"
                   data-name="108"
                   class="mista"
                   x="57.64"
@@ -5744,7 +5744,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   height="16.4"
                   transform="translate(-518.2 269.19) rotate(-45)" />
                <rect
-                  id="107"
+                  id="102_551"
                   data-name="107"
                   class="mista"
                   x="25.02"
@@ -5753,7 +5753,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   height="16.4"
                   transform="translate(-527.75 246.13) rotate(-45)" />
                <rect
-                  id="106"
+                  id="102_553"
                   data-name="106"
                   class="mista"
                   x="57.64"
@@ -5768,7 +5768,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-455.36 216.14) rotate(-45)"
-                  id="rect1157" />
+                  id="103_556" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5776,7 +5776,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-468.86 248.75) rotate(-45)"
-                  id="rect1159" />
+                  id="103_558" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5784,7 +5784,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-478.42 225.69) rotate(-45)"
-                  id="rect1161" />
+                  id="103_555" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5792,7 +5792,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-445.8 239.2) rotate(-45)"
-                  id="rect1163" />
+                  id="103_557" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5800,7 +5800,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-407.59 196.35) rotate(-45)"
-                  id="rect1165" />
+                  id="104_560" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5808,7 +5808,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-421.1 228.97) rotate(-45)"
-                  id="rect1167" />
+                  id="104_562" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5816,7 +5816,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-430.65 205.91) rotate(-45)"
-                  id="rect1169" />
+                  id="104_559" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5824,7 +5824,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-398.04 219.42) rotate(-45)"
-                  id="rect1171" />
+                  id="104_561" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5832,7 +5832,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-358.26 175.92) rotate(-45)"
-                  id="rect1173" />
+                  id="105_564" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5840,7 +5840,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-371.77 208.53) rotate(-45)"
-                  id="rect1175" />
+                  id="105_566" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5848,7 +5848,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-381.32 185.47) rotate(-45)"
-                  id="rect1177" />
+                  id="105_563" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5856,7 +5856,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-348.7 198.98) rotate(-45)"
-                  id="rect1179" />
+                  id="105_565" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5864,7 +5864,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-311.99 156.75) rotate(-45)"
-                  id="rect1181" />
+                  id="106_568" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5872,7 +5872,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-325.49 189.37) rotate(-45)"
-                  id="rect1183" />
+                  id="106_570" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5880,7 +5880,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-335.05 166.3) rotate(-45)"
-                  id="rect1185" />
+                  id="106_567" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5888,7 +5888,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-302.43 179.81) rotate(-45)"
-                  id="rect1187" />
+                  id="106_569" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5896,7 +5896,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-262.65 136.32) rotate(-45)"
-                  id="rect1189" />
+                  id="107_572" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5904,7 +5904,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-276.16 168.93) rotate(-45)"
-                  id="rect1191" />
+                  id="107_574" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5912,7 +5912,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-285.71 145.87) rotate(-45)"
-                  id="rect1193" />
+                  id="107_571" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5920,7 +5920,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-253.1 159.38) rotate(-45)"
-                  id="rect1195" />
+                  id="107_573" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5928,7 +5928,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-213.32 115.88) rotate(-45)"
-                  id="rect1197" />
+                  id="108_576" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5936,7 +5936,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-226.82 148.5) rotate(-45)"
-                  id="rect1199" />
+                  id="108_578" />
                <rect
                   class="mista"
                   x="25.02"
@@ -5944,7 +5944,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-236.38 125.43) rotate(-45)"
-                  id="rect1201" />
+                  id="108_575" />
                <rect
                   class="mista"
                   x="57.64"
@@ -5952,7 +5952,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-203.76 138.94) rotate(-45)"
-                  id="rect1203" />
+                  id="108_577" />
                <rect
                   class="mista"
                   x="10.77"
@@ -5960,7 +5960,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-107.38 60.19) rotate(-45)"
-                  id="rect1205" />
+                  id="109_580" />
                <rect
                   class="mista"
                   x="43.38"
@@ -5968,7 +5968,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-120.89 92.81) rotate(-45)"
-                  id="rect1207" />
+                  id="109_582" />
                <rect
                   class="mista"
                   x="10.77"
@@ -5976,7 +5976,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-130.45 69.75) rotate(-45)"
-                  id="rect1209" />
+                  id="109_579" />
                <rect
                   class="mista"
                   x="43.38"
@@ -5984,7 +5984,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-97.83 83.26) rotate(-45)"
-                  id="rect1211" />
+                  id="109_581" />
                <rect
                   class="mista"
                   x="78.49"
@@ -5992,7 +5992,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-87.55 108.08) rotate(-45)"
-                  id="rect1213" />
+                  id="113_596" />
                <rect
                   class="mista"
                   x="111.1"
@@ -6000,7 +6000,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-101.06 140.69) rotate(-45)"
-                  id="rect1215" />
+                  id="113_598" />
                <rect
                   class="mista"
                   x="78.49"
@@ -6008,7 +6008,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-110.61 117.63) rotate(-45)"
-                  id="rect1217" />
+                  id="113_595" />
                <rect
                   class="mista"
                   x="111.1"
@@ -6016,7 +6016,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-78 131.14) rotate(-45)"
-                  id="rect1219" />
+                  id="113_597" />
                <rect
                   class="mista"
                   x="78.49"
@@ -6024,7 +6024,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-133.74 127.21) rotate(-45)"
-                  id="rect1221" />
+                  id="112_592" />
                <rect
                   class="mista"
                   x="111.1"
@@ -6032,7 +6032,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-147.25 159.83) rotate(-45)"
-                  id="rect1223" />
+                  id="112_594" />
                <rect
                   class="mista"
                   x="78.49"
@@ -6040,7 +6040,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-156.8 136.76) rotate(-45)"
-                  id="rect1225" />
+                  id="112_591" />
                <rect
                   class="mista"
                   x="111.1"
@@ -6048,7 +6048,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-124.19 150.27) rotate(-45)"
-                  id="rect1227" />
+                  id="112_593" />
                <rect
                   class="mista"
                   x="143.81"
@@ -6056,7 +6056,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-68.42 154.27) rotate(-45)"
-                  id="rect1229" />
+                  id="122_632" />
                <rect
                   class="mista"
                   x="176.43"
@@ -6064,7 +6064,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-81.92 186.89) rotate(-45)"
-                  id="rect1231" />
+                  id="122_634" />
                <rect
                   class="mista"
                   x="143.81"
@@ -6072,7 +6072,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-91.48 163.82) rotate(-45)"
-                  id="rect1233" />
+                  id="122_631" />
                <rect
                   class="mista"
                   x="176.43"
@@ -6080,7 +6080,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-58.86 177.33) rotate(-45)"
-                  id="rect1235" />
+                  id="122_633" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6088,7 +6088,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-484.26 285.91) rotate(-45)"
-                  id="rect1237" />
+                  id="115_604" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6096,7 +6096,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-497.76 318.52) rotate(-45)"
-                  id="rect1239" />
+                  id="115_606" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6104,7 +6104,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-507.32 295.46) rotate(-45)"
-                  id="rect1241" />
+                  id="115_603" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6112,7 +6112,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-474.7 308.97) rotate(-45)"
-                  id="rect1243" />
+                  id="115_605" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6120,7 +6120,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-434.92 265.47) rotate(-45)"
-                  id="rect1245" />
+                  id="116_608" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6128,7 +6128,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-448.43 298.09) rotate(-45)"
-                  id="rect1247" />
+                  id="116_610" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6136,7 +6136,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-457.98 275.03) rotate(-45)"
-                  id="rect1249" />
+                  id="116_607" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6144,7 +6144,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-425.37 288.54) rotate(-45)"
-                  id="rect1251" />
+                  id="116_609" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6152,7 +6152,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-387.16 245.69) rotate(-45)"
-                  id="rect1253" />
+                  id="117_612" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6160,7 +6160,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-400.67 278.3) rotate(-45)"
-                  id="rect1255" />
+                  id="117_614" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6168,7 +6168,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-410.22 255.24) rotate(-45)"
-                  id="rect1257" />
+                  id="117_611" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6176,7 +6176,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-377.6 268.75) rotate(-45)"
-                  id="rect1259" />
+                  id="117_613" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6184,7 +6184,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-337.82 225.25) rotate(-45)"
-                  id="rect1261" />
+                  id="118_616" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6192,7 +6192,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-351.33 257.87) rotate(-45)"
-                  id="rect1263" />
+                  id="118_618" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6200,7 +6200,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-360.88 234.81) rotate(-45)"
-                  id="rect1265" />
+                  id="118_615" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6208,7 +6208,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-328.27 248.32) rotate(-45)"
-                  id="rect1267" />
+                  id="118_617" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6216,7 +6216,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-291.55 206.09) rotate(-45)"
-                  id="rect1269" />
+                  id="119_620" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6224,7 +6224,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-305.06 238.7) rotate(-45)"
-                  id="rect1271" />
+                  id="119_622" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6232,7 +6232,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-314.61 215.64) rotate(-45)"
-                  id="rect1273" />
+                  id="119_619" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6240,7 +6240,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-282 229.15) rotate(-45)"
-                  id="rect1275" />
+                  id="119_621" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6248,7 +6248,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-242.21 185.65) rotate(-45)"
-                  id="rect1277" />
+                  id="120_624" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6256,7 +6256,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-255.72 218.27) rotate(-45)"
-                  id="rect1279" />
+                  id="120_626" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6264,7 +6264,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-265.28 195.2) rotate(-45)"
-                  id="rect1281" />
+                  id="120_623" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6272,7 +6272,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-232.66 208.71) rotate(-45)"
-                  id="rect1283" />
+                  id="120_625" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6280,7 +6280,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-192.88 165.22) rotate(-45)"
-                  id="rect1285" />
+                  id="121_628" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6288,7 +6288,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-206.39 197.83) rotate(-45)"
-                  id="rect1287" />
+                  id="121_630" />
                <rect
                   class="mista"
                   x="94.79"
@@ -6296,7 +6296,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-215.94 174.77) rotate(-45)"
-                  id="rect1289" />
+                  id="121_627" />
                <rect
                   class="mista"
                   x="127.41"
@@ -6304,7 +6304,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-183.33 188.28) rotate(-45)"
-                  id="rect1291" />
+                  id="121_629" />
                <rect
                   class="mista"
                   x="328.88"
@@ -6312,7 +6312,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-615.26 534.1) rotate(-45)"
-                  id="rect1293" />
+                  id="123_636" />
                <rect
                   class="mista"
                   x="361.5"
@@ -6320,7 +6320,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-628.77 566.71) rotate(-45)"
-                  id="rect1295" />
+                  id="123_638" />
                <rect
                   class="mista"
                   x="328.88"
@@ -6328,7 +6328,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-638.32 543.65) rotate(-45)"
-                  id="rect1297" />
+                  id="123_635" />
                <rect
                   class="mista"
                   x="361.5"
@@ -6336,7 +6336,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-605.7 557.16) rotate(-45)"
-                  id="rect1299" />
+                  id="123_637" />
                <rect
                   class="mista"
                   x="328.88"
@@ -6344,7 +6344,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-558.96 510.78) rotate(-45)"
-                  id="rect1301" />
+                  id="124_640" />
                <rect
                   class="mista"
                   x="361.5"
@@ -6352,7 +6352,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-572.47 543.39) rotate(-45)"
-                  id="rect1303" />
+                  id="124_642" />
                <rect
                   class="mista"
                   x="328.88"
@@ -6360,7 +6360,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-582.02 520.33) rotate(-45)"
-                  id="rect1305" />
+                  id="124_639" />
                <rect
                   class="mista"
                   x="361.5"
@@ -6368,7 +6368,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-549.41 533.84) rotate(-45)"
-                  id="rect1307" />
+                  id="124_641" />
                <rect
                   class="mista"
                   x="398.65"
@@ -6376,7 +6376,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-594.82 583.43) rotate(-45)"
-                  id="rect1309" />
+                  id="125_644" />
                <rect
                   class="mista"
                   x="431.27"
@@ -6384,7 +6384,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-608.33 616.05) rotate(-45)"
-                  id="rect1311" />
+                  id="125_646" />
                <rect
                   class="mista"
                   x="398.65"
@@ -6392,7 +6392,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-617.88 592.98) rotate(-45)"
-                  id="rect1313" />
+                  id="125_643" />
                <rect
                   class="mista"
                   x="431.27"
@@ -6400,7 +6400,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-585.27 606.49) rotate(-45)"
-                  id="rect1315" />
+                  id="125_645" />
                <rect
                   class="mista"
                   x="398.65"
@@ -6408,7 +6408,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-538.53 560.11) rotate(-45)"
-                  id="rect1317" />
+                  id="126_648" />
                <rect
                   class="mista"
                   x="431.27"
@@ -6416,7 +6416,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-552.04 592.73) rotate(-45)"
-                  id="rect1319" />
+                  id="126_650" />
                <rect
                   class="mista"
                   x="398.65"
@@ -6424,7 +6424,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-561.59 569.67) rotate(-45)"
-                  id="rect1321" />
+                  id="126_647" />
                <rect
                   class="mista"
                   x="431.27"
@@ -6432,7 +6432,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-528.97 583.17) rotate(-45)"
-                  id="rect1323" />
+                  id="126_649" />
                <rect
                   class="mista"
                   x="465.59"
@@ -6440,7 +6440,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-575.22 630.76) rotate(-45)"
-                  id="rect1325" />
+                  id="127_652" />
                <rect
                   class="mista"
                   x="498.2"
@@ -6448,7 +6448,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-588.72 663.38) rotate(-45)"
-                  id="rect1327" />
+                  id="127_654" />
                <rect
                   class="mista"
                   x="465.59"
@@ -6456,7 +6456,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-598.28 640.31) rotate(-45)"
-                  id="rect1329" />
+                  id="127_651" />
                <rect
                   class="mista"
                   x="498.2"
@@ -6464,7 +6464,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-565.66 653.82) rotate(-45)"
-                  id="rect1331" />
+                  id="127_653" />
                <rect
                   class="mista"
                   x="465.59"
@@ -6472,7 +6472,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-518.92 607.44) rotate(-45)"
-                  id="rect1333" />
+                  id="128_656" />
                <rect
                   class="mista"
                   x="498.2"
@@ -6480,7 +6480,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-532.43 640.06) rotate(-45)"
-                  id="rect1335" />
+                  id="128_658" />
                <rect
                   class="mista"
                   x="465.59"
@@ -6488,7 +6488,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-541.98 617) rotate(-45)"
-                  id="rect1337" />
+                  id="128_655" />
                <rect
                   class="mista"
                   x="498.2"
@@ -6496,7 +6496,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-509.37 630.51) rotate(-45)"
-                  id="rect1339" />
+                  id="128_657" />
                <rect
                   class="mista"
                   x="535.36"
@@ -6504,7 +6504,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-554.78 680.1) rotate(-45)"
-                  id="rect1341" />
+                  id="129_660" />
                <rect
                   class="mista"
                   x="567.97"
@@ -6512,7 +6512,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-568.29 712.71) rotate(-45)"
-                  id="rect1343" />
+                  id="129_662" />
                <rect
                   class="mista"
                   x="535.36"
@@ -6520,7 +6520,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-577.84 689.65) rotate(-45)"
-                  id="rect1345" />
+                  id="129_659" />
                <rect
                   class="mista"
                   x="567.97"
@@ -6528,7 +6528,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-545.23 703.16) rotate(-45)"
-                  id="rect1347" />
+                  id="129_661" />
                <rect
                   class="mista"
                   x="535.36"
@@ -6536,7 +6536,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-498.49 656.78) rotate(-45)"
-                  id="rect1349" />
+                  id="130_664" />
                <rect
                   class="mista"
                   x="567.97"
@@ -6544,7 +6544,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-512 689.39) rotate(-45)"
-                  id="rect1351" />
+                  id="130_666" />
                <rect
                   class="mista"
                   x="535.36"
@@ -6552,7 +6552,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-521.55 666.33) rotate(-45)"
-                  id="rect1353" />
+                  id="130_663" />
                <rect
                   class="mista"
                   x="567.97"
@@ -6560,7 +6560,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-488.93 679.84) rotate(-45)"
-                  id="rect1355" />
+                  id="130_665" />
                <rect
                   class="mista"
                   x="602.78"
@@ -6568,7 +6568,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-535.03 727.77) rotate(-45)"
-                  id="rect1357" />
+                  id="131_668" />
                <rect
                   class="mista"
                   x="635.4"
@@ -6576,7 +6576,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-548.54 760.39) rotate(-45)"
-                  id="rect1359" />
+                  id="131_670" />
                <rect
                   class="mista"
                   x="602.78"
@@ -6584,7 +6584,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-558.09 737.32) rotate(-45)"
-                  id="rect1361" />
+                  id="131_667" />
                <rect
                   class="mista"
                   x="635.4"
@@ -6592,7 +6592,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-525.48 750.83) rotate(-45)"
-                  id="rect1363" />
+                  id="131_669" />
                <rect
                   class="mista"
                   x="602.78"
@@ -6600,7 +6600,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-478.74 704.45) rotate(-45)"
-                  id="rect1365" />
+                  id="132_672" />
                <rect
                   class="mista"
                   x="635.4"
@@ -6608,7 +6608,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-492.25 737.07) rotate(-45)"
-                  id="rect1367" />
+                  id="132_674" />
                <rect
                   class="mista"
                   x="602.78"
@@ -6616,7 +6616,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-501.8 714.01) rotate(-45)"
-                  id="rect1369" />
+                  id="132_671" />
                <rect
                   class="mista"
                   x="635.4"
@@ -6624,7 +6624,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-469.19 727.52) rotate(-45)"
-                  id="rect1371" />
+                  id="132_673" />
                <rect
                   class="mista"
                   x="672.55"
@@ -6632,7 +6632,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-514.6 777.11) rotate(-45)"
-                  id="rect1373" />
+                  id="133_676" />
                <rect
                   class="mista"
                   x="705.17"
@@ -6640,7 +6640,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-528.11 809.72) rotate(-45)"
-                  id="rect1375" />
+                  id="133_678" />
                <rect
                   class="mista"
                   x="672.55"
@@ -6648,7 +6648,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-537.66 786.66) rotate(-45)"
-                  id="rect1377" />
+                  id="133_675" />
                <rect
                   class="mista"
                   x="705.17"
@@ -6656,7 +6656,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-505.04 800.17) rotate(-45)"
-                  id="rect1379" />
+                  id="133_677" />
                <rect
                   class="mista"
                   x="672.55"
@@ -6664,7 +6664,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-458.3 753.79) rotate(-45)"
-                  id="rect1381" />
+                  id="134_680" />
                <rect
                   class="mista"
                   x="705.17"
@@ -6672,7 +6672,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-471.81 786.4) rotate(-45)"
-                  id="rect1383" />
+                  id="134_682" />
                <rect
                   class="mista"
                   x="672.55"
@@ -6680,7 +6680,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-481.37 763.34) rotate(-45)"
-                  id="rect1385" />
+                  id="134_679" />
                <rect
                   class="mista"
                   x="705.17"
@@ -6688,7 +6688,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-448.75 776.85) rotate(-45)"
-                  id="rect1387" />
+                  id="134_681" />
                <rect
                   class="mista"
                   x="740.63"
@@ -6696,7 +6696,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-494.66 825.25) rotate(-45)"
-                  id="rect1389" />
+                  id="135_684" />
                <rect
                   class="mista"
                   x="773.25"
@@ -6704,7 +6704,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-508.17 857.86) rotate(-45)"
-                  id="rect1391" />
+                  id="135_686" />
                <rect
                   class="mista"
                   x="740.63"
@@ -6712,7 +6712,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-517.72 834.8) rotate(-45)"
-                  id="rect1393" />
+                  id="135_683" />
                <rect
                   class="mista"
                   x="773.25"
@@ -6720,7 +6720,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-485.1 848.31) rotate(-45)"
-                  id="rect1395" />
+                  id="135_685" />
                <rect
                   class="mista"
                   x="740.63"
@@ -6728,7 +6728,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-438.36 801.93) rotate(-45)"
-                  id="rect1397" />
+                  id="136_688" />
                <rect
                   class="mista"
                   x="773.25"
@@ -6736,7 +6736,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-451.87 834.54) rotate(-45)"
-                  id="rect1399" />
+                  id="136_690" />
                <rect
                   class="mista"
                   x="740.63"
@@ -6744,7 +6744,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-461.43 811.48) rotate(-45)"
-                  id="rect1401" />
+                  id="136_687" />
                <rect
                   class="mista"
                   x="773.25"
@@ -6752,7 +6752,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-428.81 824.99) rotate(-45)"
-                  id="rect1403" />
+                  id="136_689" />
                <rect
                   class="mista"
                   x="810.4"
@@ -6760,7 +6760,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-474.22 874.58) rotate(-45)"
-                  id="rect1405" />
+                  id="137_692" />
                <rect
                   class="mista"
                   x="843.02"
@@ -6768,7 +6768,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-487.73 907.2) rotate(-45)"
-                  id="rect1407" />
+                  id="137_694" />
                <rect
                   class="mista"
                   x="810.4"
@@ -6776,7 +6776,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-497.28 884.13) rotate(-45)"
-                  id="rect1409" />
+                  id="137_691" />
                <rect
                   class="mista"
                   x="843.02"
@@ -6784,7 +6784,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-464.67 897.64) rotate(-45)"
-                  id="rect1411" />
+                  id="137_693" />
                <rect
                   class="mista"
                   x="810.4"
@@ -6792,7 +6792,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-417.93 851.26) rotate(-45)"
-                  id="rect1413" />
+                  id="138_696" />
                <rect
                   class="mista"
                   x="843.02"
@@ -6800,7 +6800,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-431.44 883.88) rotate(-45)"
-                  id="rect1415" />
+                  id="138_698" />
                <rect
                   class="mista"
                   x="810.4"
@@ -6808,7 +6808,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-440.99 860.82) rotate(-45)"
-                  id="rect1417" />
+                  id="138_695" />
                <rect
                   class="mista"
                   x="843.02"
@@ -6816,7 +6816,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-408.38 874.33) rotate(-45)"
-                  id="rect1419" />
+                  id="138_697" />
                <rect
                   class="mista"
                   x="875.39"
@@ -6824,7 +6824,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-455.19 920.54) rotate(-45)"
-                  id="rect1421" />
+                  id="139_700" />
                <rect
                   class="mista"
                   x="908.01"
@@ -6832,7 +6832,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-468.7 953.15) rotate(-45)"
-                  id="rect1423" />
+                  id="139_702" />
                <rect
                   class="mista"
                   x="875.39"
@@ -6840,7 +6840,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-478.25 930.09) rotate(-45)"
-                  id="rect1425" />
+                  id="139_699" />
                <rect
                   class="mista"
                   x="908.01"
@@ -6848,7 +6848,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-445.63 943.6) rotate(-45)"
-                  id="rect1427" />
+                  id="139_701" />
                <rect
                   class="mista"
                   x="875.39"
@@ -6856,7 +6856,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-398.89 897.22) rotate(-45)"
-                  id="rect1429" />
+                  id="140_704" />
                <rect
                   class="mista"
                   x="908.01"
@@ -6864,7 +6864,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-412.4 929.83) rotate(-45)"
-                  id="rect1431" />
+                  id="140_706" />
                <rect
                   class="mista"
                   x="875.39"
@@ -6872,7 +6872,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-421.95 906.77) rotate(-45)"
-                  id="rect1433" />
+                  id="140_703" />
                <rect
                   class="mista"
                   x="908.01"
@@ -6880,7 +6880,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-389.34 920.28) rotate(-45)"
-                  id="rect1435" />
+                  id="140_705" />
                <rect
                   class="mista"
                   x="945.16"
@@ -6888,7 +6888,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-434.75 969.87) rotate(-45)"
-                  id="rect1437" />
+                  id="141_708" />
                <rect
                   class="mista"
                   x="977.78"
@@ -6896,7 +6896,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-448.26 1002.49) rotate(-45)"
-                  id="rect1439" />
+                  id="141_710" />
                <rect
                   class="mista"
                   x="945.16"
@@ -6904,7 +6904,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-457.81 979.42) rotate(-45)"
-                  id="rect1441" />
+                  id="141_707" />
                <rect
                   class="mista"
                   x="977.78"
@@ -6912,7 +6912,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-425.2 992.93) rotate(-45)"
-                  id="rect1443" />
+                  id="141_709" />
                <rect
                   class="mista"
                   x="945.16"
@@ -6920,7 +6920,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-378.46 946.55) rotate(-45)"
-                  id="rect1445" />
+                  id="142_712" />
                <rect
                   class="mista"
                   x="977.78"
@@ -6928,7 +6928,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-391.97 979.17) rotate(-45)"
-                  id="rect1447" />
+                  id="142_714" />
                <rect
                   class="mista"
                   x="945.16"
@@ -6936,7 +6936,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-401.52 956.11) rotate(-45)"
-                  id="rect1449" />
+                  id="142_711" />
                <rect
                   class="mista"
                   x="977.78"
@@ -6944,7 +6944,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-368.91 969.62) rotate(-45)"
-                  id="rect1451" />
+                  id="142_713" />
                <rect
                   class="mista"
                   x="1015.43"
@@ -6952,7 +6952,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-414.17 1019.56) rotate(-45)"
-                  id="rect1453" />
+                  id="143_716" />
                <rect
                   class="mista"
                   x="1048.04"
@@ -6960,7 +6960,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-427.68 1052.17) rotate(-45)"
-                  id="rect1455" />
+                  id="143_718" />
                <rect
                   class="mista"
                   x="1015.43"
@@ -6968,7 +6968,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-437.23 1029.11) rotate(-45)"
-                  id="rect1457" />
+                  id="143_715" />
                <rect
                   class="mista"
                   x="1048.04"
@@ -6976,7 +6976,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-404.62 1042.62) rotate(-45)"
-                  id="rect1459" />
+                  id="143_717" />
                <rect
                   class="mista"
                   x="1015.43"
@@ -6984,7 +6984,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-357.88 996.24) rotate(-45)"
-                  id="rect1461" />
+                  id="144_720" />
                <rect
                   class="mista"
                   x="1048.04"
@@ -6992,7 +6992,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-371.39 1028.85) rotate(-45)"
-                  id="rect1463" />
+                  id="144_722" />
                <rect
                   class="mista"
                   x="1015.43"
@@ -7000,7 +7000,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-380.94 1005.79) rotate(-45)"
-                  id="rect1465" />
+                  id="144_719" />
                <rect
                   class="mista"
                   x="1048.04"
@@ -7008,7 +7008,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-348.32 1019.3) rotate(-45)"
-                  id="rect1467" />
+                  id="144_721" />
                <rect
                   class="mista"
                   x="1085.2"
@@ -7016,7 +7016,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-393.74 1068.89) rotate(-45)"
-                  id="rect1469" />
+                  id="145_724" />
                <rect
                   class="mista"
                   x="1117.81"
@@ -7024,7 +7024,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-407.25 1101.51) rotate(-45)"
-                  id="rect1471" />
+                  id="145_726" />
                <rect
                   class="mista"
                   x="1085.2"
@@ -7032,7 +7032,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-416.8 1078.44) rotate(-45)"
-                  id="rect1473" />
+                  id="145_723" />
                <rect
                   class="mista"
                   x="1117.81"
@@ -7040,7 +7040,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-384.18 1091.95) rotate(-45)"
-                  id="rect1475" />
+                  id="145_725" />
                <rect
                   class="mista"
                   x="1085.2"
@@ -7048,7 +7048,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-337.44 1045.57) rotate(-45)"
-                  id="rect1477" />
+                  id="146_728" />
                <rect
                   class="mista"
                   x="1117.81"
@@ -7056,7 +7056,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-350.95 1078.19) rotate(-45)"
-                  id="rect1479" />
+                  id="146_730" />
                <rect
                   class="mista"
                   x="1085.2"
@@ -7064,7 +7064,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-360.5 1055.13) rotate(-45)"
-                  id="rect1481" />
+                  id="146_727" />
                <rect
                   class="mista"
                   x="1117.81"
@@ -7072,7 +7072,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-327.89 1068.64) rotate(-45)"
-                  id="rect1483" />
+                  id="146_729" />
                <rect
                   class="mista"
                   x="1152.3"
@@ -7080,7 +7080,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-374.08 1116.34) rotate(-45)"
-                  id="rect1485" />
+                  id="147_732" />
                <rect
                   class="mista"
                   x="1184.91"
@@ -7088,7 +7088,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-387.59 1148.95) rotate(-45)"
-                  id="rect1487" />
+                  id="147_734" />
                <rect
                   class="mista"
                   x="1152.3"
@@ -7096,7 +7096,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-397.14 1125.89) rotate(-45)"
-                  id="rect1489" />
+                  id="147_731" />
                <rect
                   class="mista"
                   x="1184.91"
@@ -7104,7 +7104,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-364.53 1139.4) rotate(-45)"
-                  id="rect1491" />
+                  id="147_733" />
                <rect
                   class="mista"
                   x="1152.3"
@@ -7112,7 +7112,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-317.79 1093.02) rotate(-45)"
-                  id="rect1493" />
+                  id="148_736" />
                <rect
                   class="mista"
                   x="1184.91"
@@ -7120,7 +7120,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-331.3 1125.63) rotate(-45)"
-                  id="rect1495" />
+                  id="148_738" />
                <rect
                   class="mista"
                   x="1152.3"
@@ -7128,7 +7128,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-340.85 1102.57) rotate(-45)"
-                  id="rect1497" />
+                  id="148_735" />
                <rect
                   class="mista"
                   x="1184.91"
@@ -7136,7 +7136,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-308.24 1116.08) rotate(-45)"
-                  id="rect1499" />
+                  id="148_737" />
                <rect
                   class="mista"
                   x="328.88"
@@ -7144,7 +7144,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(17.94 271.82) rotate(-45)"
-                  id="rect1501" />
+                  id="196_928" />
                <rect
                   class="mista"
                   x="361.5"
@@ -7152,7 +7152,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(4.43 304.43) rotate(-45)"
-                  id="rect1503" />
+                  id="196_930" />
                <rect
                   class="mista"
                   x="328.88"
@@ -7160,7 +7160,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(-5.13 281.37) rotate(-45)"
-                  id="rect1505" />
+                  id="196_927" />
                <rect
                   class="mista"
                   x="361.5"
@@ -7168,7 +7168,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(27.49 294.88) rotate(-45)"
-                  id="rect1507" />
+                  id="196_929" />
                <rect
                   class="mista"
                   x="328.88"
@@ -7176,7 +7176,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(74.23 248.5) rotate(-45)"
-                  id="rect1509" />
+                  id="197_932" />
                <rect
                   class="mista"
                   x="361.5"
@@ -7184,7 +7184,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(60.72 281.12) rotate(-45)"
-                  id="rect1511" />
+                  id="197_934" />
                <rect
                   class="mista"
                   x="328.88"
@@ -7192,7 +7192,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(51.17 258.05) rotate(-45)"
-                  id="rect1513" />
+                  id="197_931" />
                <rect
                   class="mista"
                   x="361.5"
@@ -7200,7 +7200,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(83.78 271.56) rotate(-45)"
-                  id="rect1515" />
+                  id="197_933" />
                <rect
                   class="mista"
                   x="397.73"
@@ -7208,7 +7208,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(38.1 320.5) rotate(-45)"
-                  id="rect1517" />
+                  id="194_920" />
                <rect
                   class="mista"
                   x="430.34"
@@ -7216,7 +7216,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(24.59 353.11) rotate(-45)"
-                  id="rect1519" />
+                  id="194_922" />
                <rect
                   class="mista"
                   x="397.73"
@@ -7224,7 +7224,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(15.04 330.05) rotate(-45)"
-                  id="rect1521" />
+                  id="194_919" />
                <rect
                   class="mista"
                   x="430.34"
@@ -7232,7 +7232,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(47.65 343.56) rotate(-45)"
-                  id="rect1523" />
+                  id="194_921" />
                <rect
                   class="mista"
                   x="397.73"
@@ -7240,7 +7240,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(94.39 297.18) rotate(-45)"
-                  id="rect1525" />
+                  id="195_924" />
                <rect
                   class="mista"
                   x="430.34"
@@ -7248,7 +7248,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(80.88 329.79) rotate(-45)"
-                  id="rect1527" />
+                  id="195_926" />
                <rect
                   class="mista"
                   x="397.73"
@@ -7256,7 +7256,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(71.33 306.73) rotate(-45)"
-                  id="rect1529" />
+                  id="195_923" />
                <rect
                   class="mista"
                   x="430.34"
@@ -7264,7 +7264,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(103.95 320.24) rotate(-45)"
-                  id="rect1531" />
+                  id="195_925" />
                <rect
                   class="mista"
                   x="466.57"
@@ -7272,7 +7272,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(58.26 369.18) rotate(-45)"
-                  id="rect1533" />
+                  id="192_912" />
                <rect
                   class="mista"
                   x="499.18"
@@ -7280,7 +7280,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(44.75 401.79) rotate(-45)"
-                  id="rect1535" />
+                  id="192_914" />
                <rect
                   class="mista"
                   x="466.57"
@@ -7288,7 +7288,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(35.2 378.73) rotate(-45)"
-                  id="rect1537" />
+                  id="192_911" />
                <rect
                   class="mista"
                   x="499.18"
@@ -7296,7 +7296,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(67.82 392.24) rotate(-45)"
-                  id="rect1539" />
+                  id="192_913" />
                <rect
                   class="mista"
                   x="466.57"
@@ -7304,7 +7304,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(114.56 345.86) rotate(-45)"
-                  id="rect1541" />
+                  id="193_916" />
                <rect
                   class="mista"
                   x="499.18"
@@ -7312,7 +7312,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(101.05 378.47) rotate(-45)"
-                  id="rect1543" />
+                  id="193_918" />
                <rect
                   class="mista"
                   x="466.57"
@@ -7320,7 +7320,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(91.5 355.41) rotate(-45)"
-                  id="rect1545" />
+                  id="193_915" />
                <rect
                   class="mista"
                   x="499.18"
@@ -7328,7 +7328,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(124.11 368.92) rotate(-45)"
-                  id="rect1547" />
+                  id="193_917" />
                <rect
                   class="mista"
                   x="535.41"
@@ -7336,7 +7336,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(78.43 417.86) rotate(-45)"
-                  id="rect1549" />
+                  id="190_904" />
                <rect
                   class="mista"
                   x="568.03"
@@ -7344,7 +7344,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(64.92 450.47) rotate(-45)"
-                  id="rect1551" />
+                  id="190_906" />
                <rect
                   class="mista"
                   x="535.41"
@@ -7352,7 +7352,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(55.37 427.41) rotate(-45)"
-                  id="rect1553" />
+                  id="190_903" />
                <rect
                   class="mista"
                   x="568.03"
@@ -7360,7 +7360,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(87.98 440.92) rotate(-45)"
-                  id="rect1555" />
+                  id="190_905" />
                <rect
                   class="mista"
                   x="535.41"
@@ -7368,7 +7368,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(134.72 394.54) rotate(-45)"
-                  id="rect1557" />
+                  id="191_908" />
                <rect
                   class="mista"
                   x="568.03"
@@ -7376,7 +7376,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(121.21 427.15) rotate(-45)"
-                  id="rect1559" />
+                  id="191_910" />
                <rect
                   class="mista"
                   x="535.41"
@@ -7384,7 +7384,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(111.66 404.09) rotate(-45)"
-                  id="rect1561" />
+                  id="191_907" />
                <rect
                   class="mista"
                   x="568.03"
@@ -7392,7 +7392,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(144.27 417.6) rotate(-45)"
-                  id="rect1563" />
+                  id="191_909" />
                <rect
                   class="mista"
                   x="604.25"
@@ -7400,7 +7400,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(98.59 466.54) rotate(-45)"
-                  id="rect1565" />
+                  id="188_896" />
                <rect
                   class="mista"
                   x="636.87"
@@ -7408,7 +7408,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(85.08 499.15) rotate(-45)"
-                  id="rect1567" />
+                  id="188_898" />
                <rect
                   class="mista"
                   x="604.25"
@@ -7416,7 +7416,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(75.53 476.09) rotate(-45)"
-                  id="rect1569" />
+                  id="188_895" />
                <rect
                   class="mista"
                   x="636.87"
@@ -7424,7 +7424,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(108.14 489.6) rotate(-45)"
-                  id="rect1571" />
+                  id="188_897" />
                <rect
                   class="mista"
                   x="604.25"
@@ -7432,7 +7432,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(154.88 443.22) rotate(-45)"
-                  id="rect1573" />
+                  id="189_900" />
                <rect
                   class="mista"
                   x="636.87"
@@ -7440,7 +7440,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(141.38 475.83) rotate(-45)"
-                  id="rect1575" />
+                  id="189_902" />
                <rect
                   class="mista"
                   x="604.25"
@@ -7448,7 +7448,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(131.82 452.77) rotate(-45)"
-                  id="rect1577" />
+                  id="189_899" />
                <rect
                   class="mista"
                   x="636.87"
@@ -7456,7 +7456,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(164.44 466.28) rotate(-45)"
-                  id="rect1579" />
+                  id="189_901" />
                <rect
                   class="mista"
                   x="673.1"
@@ -7464,7 +7464,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(118.75 515.21) rotate(-45)"
-                  id="rect1581" />
+                  id="186_888" />
                <rect
                   class="mista"
                   x="705.71"
@@ -7472,7 +7472,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(105.24 547.83) rotate(-45)"
-                  id="rect1583" />
+                  id="186_890" />
                <rect
                   class="mista"
                   x="673.1"
@@ -7480,7 +7480,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(95.69 524.77) rotate(-45)"
-                  id="rect1585" />
+                  id="186_887" />
                <rect
                   class="mista"
                   x="705.71"
@@ -7488,7 +7488,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(128.31 538.28) rotate(-45)"
-                  id="rect1587" />
+                  id="186_889" />
                <rect
                   class="mista"
                   x="673.1"
@@ -7496,7 +7496,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(175.05 491.9) rotate(-45)"
-                  id="rect1589" />
+                  id="187_892" />
                <rect
                   class="mista"
                   x="705.71"
@@ -7504,7 +7504,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(161.54 524.51) rotate(-45)"
-                  id="rect1591" />
+                  id="187_894" />
                <rect
                   class="mista"
                   x="673.1"
@@ -7512,7 +7512,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(151.99 501.45) rotate(-45)"
-                  id="rect1593" />
+                  id="187_891" />
                <rect
                   class="mista"
                   x="705.71"
@@ -7520,7 +7520,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(184.6 514.96) rotate(-45)"
-                  id="rect1595" />
+                  id="187_893" />
                <rect
                   class="mista"
                   x="741.94"
@@ -7528,7 +7528,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(138.92 563.89) rotate(-45)"
-                  id="rect1597" />
+                  id="184_881" />
                <rect
                   class="mista"
                   x="774.55"
@@ -7536,7 +7536,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(125.41 596.51) rotate(-45)"
-                  id="rect1599" />
+                  id="184_879" />
                <rect
                   class="mista"
                   x="741.94"
@@ -7544,7 +7544,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(115.86 573.45) rotate(-45)"
-                  id="rect1601" />
+                  id="184_880" />
                <rect
                   class="mista"
                   x="774.55"
@@ -7552,7 +7552,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(148.47 586.96) rotate(-45)"
-                  id="rect1603" />
+                  id="184_882" />
                <rect
                   class="mista"
                   x="741.94"
@@ -7560,7 +7560,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(195.21 540.58) rotate(-45)"
-                  id="rect1605" />
+                  id="185_884" />
                <rect
                   class="mista"
                   x="774.55"
@@ -7568,7 +7568,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(181.7 573.19) rotate(-45)"
-                  id="rect1607" />
+                  id="185_886" />
                <rect
                   class="mista"
                   x="741.94"
@@ -7576,7 +7576,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(172.15 550.13) rotate(-45)"
-                  id="rect1609" />
+                  id="185_883" />
                <rect
                   class="mista"
                   x="774.55"
@@ -7584,7 +7584,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(204.76 563.64) rotate(-45)"
-                  id="rect1611" />
+                  id="185_885" />
                <rect
                   class="mista"
                   x="810.78"
@@ -7592,7 +7592,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(159.08 612.57) rotate(-45)"
-                  id="rect1613" />
+                  id="182_872" />
                <rect
                   class="mista"
                   x="843.4"
@@ -7600,7 +7600,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(145.57 645.19) rotate(-45)"
-                  id="rect1615" />
+                  id="182_874" />
                <rect
                   class="mista"
                   x="810.78"
@@ -7608,7 +7608,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(136.02 622.13) rotate(-45)"
-                  id="rect1617" />
+                  id="182_871" />
                <rect
                   class="mista"
                   x="843.4"
@@ -7616,7 +7616,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(168.63 635.63) rotate(-45)"
-                  id="rect1619" />
+                  id="182_873" />
                <rect
                   class="mista"
                   x="810.78"
@@ -7624,7 +7624,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(215.38 589.26) rotate(-45)"
-                  id="rect1621" />
+                  id="183_876" />
                <rect
                   class="mista"
                   x="843.4"
@@ -7632,7 +7632,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(201.87 621.87) rotate(-45)"
-                  id="rect1623" />
+                  id="183_878" />
                <rect
                   class="mista"
                   x="810.78"
@@ -7640,7 +7640,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(192.31 598.81) rotate(-45)"
-                  id="rect1625" />
+                  id="183_875" />
                <rect
                   class="mista"
                   x="843.4"
@@ -7648,7 +7648,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(224.93 612.32) rotate(-45)"
-                  id="rect1627" />
+                  id="183_877" />
                <rect
                   class="mista"
                   x="879.62"
@@ -7656,7 +7656,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(179.24 661.25) rotate(-45)"
-                  id="rect1629" />
+                  id="180_864" />
                <rect
                   class="mista"
                   x="912.24"
@@ -7664,7 +7664,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(165.74 693.87) rotate(-45)"
-                  id="rect1631" />
+                  id="180_866" />
                <rect
                   class="mista"
                   x="879.62"
@@ -7672,7 +7672,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(156.18 670.8) rotate(-45)"
-                  id="rect1633" />
+                  id="180_863" />
                <rect
                   class="mista"
                   x="912.24"
@@ -7680,7 +7680,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(188.8 684.31) rotate(-45)"
-                  id="rect1635" />
+                  id="180_865" />
                <rect
                   class="mista"
                   x="879.62"
@@ -7688,7 +7688,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(235.54 637.93) rotate(-45)"
-                  id="rect1637" />
+                  id="181_868" />
                <rect
                   class="mista"
                   x="912.24"
@@ -7696,7 +7696,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(222.03 670.55) rotate(-45)"
-                  id="rect1639" />
+                  id="181_870" />
                <rect
                   class="mista"
                   x="879.62"
@@ -7704,7 +7704,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(212.48 647.49) rotate(-45)"
-                  id="rect1641" />
+                  id="181_867" />
                <rect
                   class="mista"
                   x="912.24"
@@ -7712,7 +7712,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(245.09 661) rotate(-45)"
-                  id="rect1643" />
+                  id="181_869" />
                <rect
                   class="mista"
                   x="948.47"
@@ -7720,7 +7720,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(199.41 709.93) rotate(-45)"
-                  id="rect1645" />
+                  id="178_856" />
                <rect
                   class="mista"
                   x="981.08"
@@ -7728,7 +7728,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(185.9 742.55) rotate(-45)"
-                  id="rect1647" />
+                  id="178_858" />
                <rect
                   class="mista"
                   x="948.47"
@@ -7736,7 +7736,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(176.35 719.48) rotate(-45)"
-                  id="rect1649" />
+                  id="178_855" />
                <rect
                   class="mista"
                   x="981.08"
@@ -7744,7 +7744,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(208.96 732.99) rotate(-45)"
-                  id="rect1651" />
+                  id="178_857" />
                <rect
                   class="mista"
                   x="948.47"
@@ -7752,7 +7752,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(255.7 686.61) rotate(-45)"
-                  id="rect1653" />
+                  id="179_860" />
                <rect
                   class="mista"
                   x="981.08"
@@ -7760,7 +7760,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(242.19 719.23) rotate(-45)"
-                  id="rect1655" />
+                  id="179_862" />
                <rect
                   class="mista"
                   x="948.47"
@@ -7768,7 +7768,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(232.64 696.17) rotate(-45)"
-                  id="rect1657" />
+                  id="179_859" />
                <rect
                   class="mista"
                   x="981.08"
@@ -7776,7 +7776,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(265.25 709.68) rotate(-45)"
-                  id="rect1659" />
+                  id="179_861" />
                <rect
                   class="mista"
                   x="1017.31"
@@ -7784,7 +7784,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(219.57 758.61) rotate(-45)"
-                  id="rect1661" />
+                  id="176_848" />
                <rect
                   class="mista"
                   x="1049.92"
@@ -7792,7 +7792,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(206.06 791.22) rotate(-45)"
-                  id="rect1663" />
+                  id="176_850" />
                <rect
                   class="mista"
                   x="1017.31"
@@ -7800,7 +7800,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(196.51 768.16) rotate(-45)"
-                  id="rect1665" />
+                  id="176_847" />
                <rect
                   class="mista"
                   x="1049.92"
@@ -7808,7 +7808,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(229.12 781.67) rotate(-45)"
-                  id="rect1667" />
+                  id="176_849" />
                <rect
                   class="mista"
                   x="1017.31"
@@ -7816,7 +7816,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(275.87 735.29) rotate(-45)"
-                  id="rect1669" />
+                  id="177_852" />
                <rect
                   class="mista"
                   x="1049.92"
@@ -7824,7 +7824,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(262.36 767.91) rotate(-45)"
-                  id="rect1671" />
+                  id="177_854" />
                <rect
                   class="mista"
                   x="1017.31"
@@ -7832,7 +7832,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(252.8 744.85) rotate(-45)"
-                  id="rect1673" />
+                  id="177_851" />
                <rect
                   class="mista"
                   x="1049.92"
@@ -7840,7 +7840,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(285.42 758.35) rotate(-45)"
-                  id="rect1675" />
+                  id="177_853" />
                <rect
                   class="mista"
                   x="1086.15"
@@ -7848,7 +7848,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(239.74 807.29) rotate(-45)"
-                  id="rect1677" />
+                  id="174_840" />
                <rect
                   class="mista"
                   x="1118.77"
@@ -7856,7 +7856,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(226.23 839.9) rotate(-45)"
-                  id="rect1679" />
+                  id="174_842" />
                <rect
                   class="mista"
                   x="1086.15"
@@ -7864,7 +7864,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(216.67 816.84) rotate(-45)"
-                  id="rect1681" />
+                  id="174_839" />
                <rect
                   class="mista"
                   x="1118.77"
@@ -7872,7 +7872,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(249.29 830.35) rotate(-45)"
-                  id="rect1683" />
+                  id="174_841" />
                <rect
                   class="mista"
                   x="1086.15"
@@ -7880,7 +7880,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(296.03 783.97) rotate(-45)"
-                  id="rect1685" />
+                  id="175_844" />
                <rect
                   class="mista"
                   x="1118.77"
@@ -7888,7 +7888,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(282.52 816.59) rotate(-45)"
-                  id="rect1687" />
+                  id="175_846" />
                <rect
                   class="mista"
                   x="1086.15"
@@ -7896,7 +7896,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(272.97 793.52) rotate(-45)"
-                  id="rect1689" />
+                  id="175_843" />
                <rect
                   class="mista"
                   x="1118.77"
@@ -7904,7 +7904,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(305.58 807.03) rotate(-45)"
-                  id="rect1691" />
+                  id="175_845" />
                <rect
                   class="mista"
                   x="1155"
@@ -7912,7 +7912,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(259.9 855.97) rotate(-45)"
-                  id="rect1693" />
+                  id="172_832" />
                <rect
                   class="mista"
                   x="1187.61"
@@ -7920,7 +7920,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(246.39 888.58) rotate(-45)"
-                  id="rect1695" />
+                  id="172_834" />
                <rect
                   class="mista"
                   x="1155"
@@ -7928,7 +7928,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(236.84 865.52) rotate(-45)"
-                  id="rect1697" />
+                  id="172_831" />
                <rect
                   class="mista"
                   x="1187.61"
@@ -7936,7 +7936,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(269.45 879.03) rotate(-45)"
-                  id="rect1699" />
+                  id="172_833" />
                <rect
                   class="mista"
                   x="1155"
@@ -7944,7 +7944,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(316.19 832.65) rotate(-45)"
-                  id="rect1701" />
+                  id="173_836" />
                <rect
                   class="mista"
                   x="1187.61"
@@ -7952,7 +7952,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(302.68 865.27) rotate(-45)"
-                  id="rect1703" />
+                  id="173_838" />
                <rect
                   class="mista"
                   x="1155"
@@ -7960,9 +7960,9 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   width="16.4"
                   height="16.4"
                   transform="translate(293.13 842.2) rotate(-45)"
-                  id="rect1705" />
+                  id="173_835" />
                <rect
-                  id="_1111"
+                  id="173_837"
                   data-name="1111"
                   class="mista"
                   x="1187.61"
@@ -9231,104 +9231,104 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
                   id="tspan7396"
                   class="popis-cerny">načítání</tspan></text>
 
-<g id="circle" className='circle'>
-	<line x1="721.5" y1="548.3" x2="721.5" y2="568.3"/>
-	<line class="" x1="721.5" y1="337.9" x2="721.5" y2="358"/>
-	<line class="" x1="626.4" y1="453.1" x2="606.3" y2="453.1"/>
-	<line class="" x1="836.7" y1="453.1" x2="816.7" y2="453.1"/>
-	<line class="" x1="788.8" y1="520.4" x2="803" y2="534.6"/>
-	<line class="" x1="640.1" y1="371.7" x2="654.3" y2="385.9"/>
-	<line class="" x1="654.3" y1="520.4" x2="640.1" y2="534.6"/>
-	<line class="" x1="803" y1="371.7" x2="788.8" y2="385.9"/>
-	<line class="" x1="803.9" y1="500.7" x2="821.3" y2="510.7"/>
-	<line class="" x1="621.8" y1="395.5" x2="639.1" y2="405.6"/>
-	<line class="" x1="674" y1="535.5" x2="663.9" y2="552.9"/>
-	<line class="" x1="779.1" y1="353.4" x2="769.1" y2="370.7"/>
-	<line class="" x1="813.4" y1="428.5" x2="832.8" y2="423.3"/>
-	<line class="" x1="610.3" y1="483" x2="629.6" y2="477.8"/>
-	<line class="" x1="746.2" y1="545" x2="751.4" y2="564.4"/>
-	<line class="" x1="691.7" y1="341.9" x2="696.9" y2="361.2"/>
-	<line class="" x1="639.1" y1="500.7" x2="621.8" y2="510.7"/>
-	<line class="" x1="821.3" y1="395.5" x2="803.9" y2="405.6"/>
-	<line class="" x1="674" y1="370.7" x2="663.9" y2="353.4"/>
-	<line class="" x1="779.1" y1="552.9" x2="769.1" y2="535.5"/>
-	<line class="" x1="696.9" y1="545" x2="691.7" y2="564.4"/>
-	<line class="" x1="751.4" y1="341.9" x2="746.2" y2="361.2"/>
-	<line class="" x1="629.6" y1="428.5" x2="610.3" y2="423.3"/>
-	<line class="" x1="832.8" y1="483" x2="813.4" y2="477.8"/>
-	<line class="" x1="815.9" y1="465.6" x2="835.8" y2="468.2"/>
-	<line class="" x1="607.3" y1="438.1" x2="627.2" y2="440.7"/>
-	<line class="" x1="709.1" y1="547.5" x2="706.5" y2="567.4"/>
-	<line class="" x1="736.6" y1="338.9" x2="734" y2="358.8"/>
-	<line class="" x1="797" y1="395.2" x2="812.9" y2="383"/>
-	<line class="" x1="630.1" y1="523.3" x2="646" y2="511.1"/>
-	<line class="" x1="779.5" y1="528.6" x2="791.7" y2="544.5"/>
-	<line class="" x1="651.4" y1="361.7" x2="663.6" y2="377.6"/>
-	<line class="" x1="779.5" y1="377.6" x2="791.7" y2="361.7"/>
-	<line class="" x1="651.4" y1="544.5" x2="663.6" y2="528.6"/>
-	<line class="" x1="797" y1="511.1" x2="812.9" y2="523.3"/>
-	<line class="" x1="630.1" y1="383" x2="646" y2="395.2"/>
-	<line class="" x1="709.1" y1="358.8" x2="706.5" y2="338.9"/>
-	<line class="" x1="736.6" y1="567.4" x2="734" y2="547.5"/>
-	<line class="" x1="815.9" y1="440.7" x2="835.8" y2="438.1"/>
-	<line class="" x1="607.3" y1="468.2" x2="627.2" y2="465.6"/>
-	<line class="" x1="757.9" y1="541" x2="765.6" y2="559.6"/>
-	<line class="" x1="677.4" y1="346.7" x2="685.1" y2="365.2"/>
-	<line class="" x1="633.6" y1="489.5" x2="615.1" y2="497.2"/>
-	<line class="" x1="828" y1="409" x2="809.4" y2="416.7"/>
-	<line class="" x1="809.4" y1="489.5" x2="828" y2="497.2"/>
-	<line class="" x1="615.1" y1="409" x2="633.6" y2="416.7"/>
-	<line class="" x1="685.1" y1="541" x2="677.4" y2="559.6"/>
-	<line class="" x1="765.6" y1="346.7" x2="757.9" y2="365.2"/>
-	<line class="" x1="727.8" y1="548.1" x2="729.1" y2="568.1"/>
-	<line class="" x1="714" y1="338.2" x2="715.3" y2="358.2"/>
-	<line class="" x1="626.6" y1="459.4" x2="606.6" y2="460.7"/>
-	<line class="" x1="836.5" y1="445.6" x2="816.5" y2="446.9"/>
-	<line class="" x1="793.1" y1="515.9" x2="808.2" y2="529.1"/>
-	<line class="" x1="634.9" y1="377.2" x2="650" y2="390.4"/>
-	<line class="" x1="658.8" y1="524.7" x2="645.6" y2="539.7"/>
-	<line class="" x1="797.5" y1="366.5" x2="784.3" y2="381.6"/>
-	<line class="" x1="806.9" y1="495.2" x2="824.9" y2="504.1"/>
-	<line class="" x1="618.2" y1="402.2" x2="636.2" y2="411"/>
-	<line class="" x1="679.5" y1="538.5" x2="670.6" y2="556.5"/>
-	<line class="" x1="772.5" y1="349.8" x2="763.6" y2="367.8"/>
-	<line class="" x1="811.6" y1="422.5" x2="830.6" y2="416.1"/>
-	<line class="" x1="612.4" y1="490.2" x2="631.4" y2="483.7"/>
-	<line class="" x1="752.1" y1="543.2" x2="758.6" y2="562.2"/>
-	<line class="" x1="684.5" y1="344" x2="691" y2="363"/>
-	<line class="" x1="642.4" y1="506" x2="625.7" y2="517.1"/>
-	<line class="" x1="817.3" y1="389.1" x2="800.7" y2="400.3"/>
-	<line class="" x1="668.7" y1="374" x2="657.5" y2="357.3"/>
-	<line class="" x1="785.5" y1="548.9" x2="774.4" y2="532.2"/>
-	<line class="" x1="703" y1="546.5" x2="699.1" y2="566.1"/>
-	<line class="" x1="744" y1="340.1" x2="740.1" y2="359.8"/>
-	<line class="" x1="628.2" y1="434.6" x2="608.5" y2="430.7"/>
-	<line class="" x1="834.5" y1="475.6" x2="814.9" y2="471.7"/>
-	<line class="" x1="816.5" y1="459.4" x2="836.5" y2="460.7"/>
-	<line class="" x1="606.6" y1="445.6" x2="626.6" y2="446.9"/>
-	<line class="" x1="715.3" y1="548.1" x2="714" y2="568.1"/>
-	<line class="" x1="729.1" y1="338.2" x2="727.8" y2="358.2"/>
-	<line class="" x1="793.1" y1="390.4" x2="808.2" y2="377.2"/>
-	<line class="" x1="634.9" y1="529.1" x2="650" y2="515.9"/>
-	<line class="" x1="784.3" y1="524.7" x2="797.5" y2="539.7"/>
-	<line class="" x1="645.6" y1="366.5" x2="658.8" y2="381.6"/>
-	<line class="" x1="774.4" y1="374" x2="785.5" y2="357.3"/>
-	<line class="" x1="657.5" y1="548.9" x2="668.7" y2="532.2"/>
-	<line class="" x1="800.7" y1="506" x2="817.3" y2="517.1"/>
-	<line class="" x1="625.7" y1="389.1" x2="642.4" y2="400.3"/>
-	<line class="" x1="703" y1="359.8" x2="699.1" y2="340.1"/>
-	<line class="" x1="744" y1="566.1" x2="740.1" y2="546.5"/>
-	<line class="" x1="814.9" y1="434.6" x2="834.5" y2="430.7"/>
-	<line class="" x1="608.5" y1="475.6" x2="628.2" y2="471.7"/>
-	<line class="" x1="763.6" y1="538.5" x2="772.5" y2="556.5"/>
-	<line class="" x1="670.6" y1="349.8" x2="679.5" y2="367.8"/>
-	<line class="" x1="636.2" y1="495.2" x2="618.2" y2="504.1"/>
-	<line class="" x1="824.9" y1="402.2" x2="806.9" y2="411"/>
-	<line class="" x1="811.6" y1="483.7" x2="830.6" y2="490.2"/>
-	<line class="" x1="612.4" y1="416.1" x2="631.4" y2="422.5"/>
-	<line class="" x1="691" y1="543.2" x2="684.5" y2="562.2"/>
-	<line class="" x1="758.6" y1="344" x2="752.1" y2="363"/>
-</g>
+            <g id="circle" className='circle'>
+               <line x1="721.5" y1="548.3" x2="721.5" y2="568.3" />
+               <line class="" x1="721.5" y1="337.9" x2="721.5" y2="358" />
+               <line class="" x1="626.4" y1="453.1" x2="606.3" y2="453.1" />
+               <line class="" x1="836.7" y1="453.1" x2="816.7" y2="453.1" />
+               <line class="" x1="788.8" y1="520.4" x2="803" y2="534.6" />
+               <line class="" x1="640.1" y1="371.7" x2="654.3" y2="385.9" />
+               <line class="" x1="654.3" y1="520.4" x2="640.1" y2="534.6" />
+               <line class="" x1="803" y1="371.7" x2="788.8" y2="385.9" />
+               <line class="" x1="803.9" y1="500.7" x2="821.3" y2="510.7" />
+               <line class="" x1="621.8" y1="395.5" x2="639.1" y2="405.6" />
+               <line class="" x1="674" y1="535.5" x2="663.9" y2="552.9" />
+               <line class="" x1="779.1" y1="353.4" x2="769.1" y2="370.7" />
+               <line class="" x1="813.4" y1="428.5" x2="832.8" y2="423.3" />
+               <line class="" x1="610.3" y1="483" x2="629.6" y2="477.8" />
+               <line class="" x1="746.2" y1="545" x2="751.4" y2="564.4" />
+               <line class="" x1="691.7" y1="341.9" x2="696.9" y2="361.2" />
+               <line class="" x1="639.1" y1="500.7" x2="621.8" y2="510.7" />
+               <line class="" x1="821.3" y1="395.5" x2="803.9" y2="405.6" />
+               <line class="" x1="674" y1="370.7" x2="663.9" y2="353.4" />
+               <line class="" x1="779.1" y1="552.9" x2="769.1" y2="535.5" />
+               <line class="" x1="696.9" y1="545" x2="691.7" y2="564.4" />
+               <line class="" x1="751.4" y1="341.9" x2="746.2" y2="361.2" />
+               <line class="" x1="629.6" y1="428.5" x2="610.3" y2="423.3" />
+               <line class="" x1="832.8" y1="483" x2="813.4" y2="477.8" />
+               <line class="" x1="815.9" y1="465.6" x2="835.8" y2="468.2" />
+               <line class="" x1="607.3" y1="438.1" x2="627.2" y2="440.7" />
+               <line class="" x1="709.1" y1="547.5" x2="706.5" y2="567.4" />
+               <line class="" x1="736.6" y1="338.9" x2="734" y2="358.8" />
+               <line class="" x1="797" y1="395.2" x2="812.9" y2="383" />
+               <line class="" x1="630.1" y1="523.3" x2="646" y2="511.1" />
+               <line class="" x1="779.5" y1="528.6" x2="791.7" y2="544.5" />
+               <line class="" x1="651.4" y1="361.7" x2="663.6" y2="377.6" />
+               <line class="" x1="779.5" y1="377.6" x2="791.7" y2="361.7" />
+               <line class="" x1="651.4" y1="544.5" x2="663.6" y2="528.6" />
+               <line class="" x1="797" y1="511.1" x2="812.9" y2="523.3" />
+               <line class="" x1="630.1" y1="383" x2="646" y2="395.2" />
+               <line class="" x1="709.1" y1="358.8" x2="706.5" y2="338.9" />
+               <line class="" x1="736.6" y1="567.4" x2="734" y2="547.5" />
+               <line class="" x1="815.9" y1="440.7" x2="835.8" y2="438.1" />
+               <line class="" x1="607.3" y1="468.2" x2="627.2" y2="465.6" />
+               <line class="" x1="757.9" y1="541" x2="765.6" y2="559.6" />
+               <line class="" x1="677.4" y1="346.7" x2="685.1" y2="365.2" />
+               <line class="" x1="633.6" y1="489.5" x2="615.1" y2="497.2" />
+               <line class="" x1="828" y1="409" x2="809.4" y2="416.7" />
+               <line class="" x1="809.4" y1="489.5" x2="828" y2="497.2" />
+               <line class="" x1="615.1" y1="409" x2="633.6" y2="416.7" />
+               <line class="" x1="685.1" y1="541" x2="677.4" y2="559.6" />
+               <line class="" x1="765.6" y1="346.7" x2="757.9" y2="365.2" />
+               <line class="" x1="727.8" y1="548.1" x2="729.1" y2="568.1" />
+               <line class="" x1="714" y1="338.2" x2="715.3" y2="358.2" />
+               <line class="" x1="626.6" y1="459.4" x2="606.6" y2="460.7" />
+               <line class="" x1="836.5" y1="445.6" x2="816.5" y2="446.9" />
+               <line class="" x1="793.1" y1="515.9" x2="808.2" y2="529.1" />
+               <line class="" x1="634.9" y1="377.2" x2="650" y2="390.4" />
+               <line class="" x1="658.8" y1="524.7" x2="645.6" y2="539.7" />
+               <line class="" x1="797.5" y1="366.5" x2="784.3" y2="381.6" />
+               <line class="" x1="806.9" y1="495.2" x2="824.9" y2="504.1" />
+               <line class="" x1="618.2" y1="402.2" x2="636.2" y2="411" />
+               <line class="" x1="679.5" y1="538.5" x2="670.6" y2="556.5" />
+               <line class="" x1="772.5" y1="349.8" x2="763.6" y2="367.8" />
+               <line class="" x1="811.6" y1="422.5" x2="830.6" y2="416.1" />
+               <line class="" x1="612.4" y1="490.2" x2="631.4" y2="483.7" />
+               <line class="" x1="752.1" y1="543.2" x2="758.6" y2="562.2" />
+               <line class="" x1="684.5" y1="344" x2="691" y2="363" />
+               <line class="" x1="642.4" y1="506" x2="625.7" y2="517.1" />
+               <line class="" x1="817.3" y1="389.1" x2="800.7" y2="400.3" />
+               <line class="" x1="668.7" y1="374" x2="657.5" y2="357.3" />
+               <line class="" x1="785.5" y1="548.9" x2="774.4" y2="532.2" />
+               <line class="" x1="703" y1="546.5" x2="699.1" y2="566.1" />
+               <line class="" x1="744" y1="340.1" x2="740.1" y2="359.8" />
+               <line class="" x1="628.2" y1="434.6" x2="608.5" y2="430.7" />
+               <line class="" x1="834.5" y1="475.6" x2="814.9" y2="471.7" />
+               <line class="" x1="816.5" y1="459.4" x2="836.5" y2="460.7" />
+               <line class="" x1="606.6" y1="445.6" x2="626.6" y2="446.9" />
+               <line class="" x1="715.3" y1="548.1" x2="714" y2="568.1" />
+               <line class="" x1="729.1" y1="338.2" x2="727.8" y2="358.2" />
+               <line class="" x1="793.1" y1="390.4" x2="808.2" y2="377.2" />
+               <line class="" x1="634.9" y1="529.1" x2="650" y2="515.9" />
+               <line class="" x1="784.3" y1="524.7" x2="797.5" y2="539.7" />
+               <line class="" x1="645.6" y1="366.5" x2="658.8" y2="381.6" />
+               <line class="" x1="774.4" y1="374" x2="785.5" y2="357.3" />
+               <line class="" x1="657.5" y1="548.9" x2="668.7" y2="532.2" />
+               <line class="" x1="800.7" y1="506" x2="817.3" y2="517.1" />
+               <line class="" x1="625.7" y1="389.1" x2="642.4" y2="400.3" />
+               <line class="" x1="703" y1="359.8" x2="699.1" y2="340.1" />
+               <line class="" x1="744" y1="566.1" x2="740.1" y2="546.5" />
+               <line class="" x1="814.9" y1="434.6" x2="834.5" y2="430.7" />
+               <line class="" x1="608.5" y1="475.6" x2="628.2" y2="471.7" />
+               <line class="" x1="763.6" y1="538.5" x2="772.5" y2="556.5" />
+               <line class="" x1="670.6" y1="349.8" x2="679.5" y2="367.8" />
+               <line class="" x1="636.2" y1="495.2" x2="618.2" y2="504.1" />
+               <line class="" x1="824.9" y1="402.2" x2="806.9" y2="411" />
+               <line class="" x1="811.6" y1="483.7" x2="830.6" y2="490.2" />
+               <line class="" x1="612.4" y1="416.1" x2="631.4" y2="422.5" />
+               <line class="" x1="691" y1="543.2" x2="684.5" y2="562.2" />
+               <line class="" x1="758.6" y1="344" x2="752.1" y2="363" />
+            </g>
 
 
          </svg>
