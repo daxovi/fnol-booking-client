@@ -66,7 +66,7 @@ const Booking = () => {
     return (
         <div className='booking'>
             <div>
-            Vítejte v rezervačním systému pro 23. reprezentační ples Fakultní nemocnice Olomouc! Máme radost, že máte zájem strávit tento výjimečný večer spolu s námi. Aby pro vás bylo zajištění co nejpohodlnější, připravili jsme pro vás jednoduchý rezervační proces. V několika krocích si budete moci vybrat z různých typů míst, ať už upřednostňujete být v srdci dění na tanečním parketu nebo si užívat večer s výhledem z galerie. Postupujte krok po kroku a rezervujte si místa, která preferujete.
+            Vítejte v rezervačním systému pro 23. reprezentační ples Fakultní nemocnice Olomouc! Máme radost, že máte zájem strávit tento výjimečný večer spolu s námi. Aby pro vás bylo zajištění vstupenek co nejpohodlnější, připravili jsme pro vás jednoduchý rezervační proces. V několika krocích si budete moci vybrat z různých typů míst, ať už upřednostňujete být v srdci dění na tanečním parketu nebo si užívat večer s výhledem z galerie. Postupujte krok po kroku a rezervujte si místa, která preferujete.
             </div>
             <div className="row">
                 <Step number="1" name="Vyberte si podlaží" />
