@@ -60,6 +60,12 @@ header {
   padding-bottom: 4px;
 }
 
+.title-bar h1 strong a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #244a90;
+}
+
 
 /* Sociální sítě vpravo na headeru */
 .social {

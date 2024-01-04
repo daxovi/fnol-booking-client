@@ -9,7 +9,7 @@ function App() {
       <Header />
       <div className="title-bar">
         <div className="container">
-          <h1><strong>23. reprezentační Ples Fakultní nemocnice Olomouc</strong>
+          <h1><strong><a href="https://ples.fnol.cz/">23. reprezentační Ples Fakultní nemocnice Olomouc</a></strong>
             Rezervační systém
           </h1>
 

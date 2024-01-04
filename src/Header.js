@@ -8,11 +8,11 @@ function Header() {
             <div class="bar">
                 <img src={logo} alt="" srcset="" />
                 <div class="social">
-                    <a href="#">
+                    <a href="https://www.facebook.com/fnolomouc/">
                         <svg id="Vrstva_1" data-name="Vrstva 1" height="50%" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 52 96.3"><path class="cls-1" d="M874.57,518.56h-12.5c-14,0-23.1,9.3-23.1,23.7v10.9h-12.5a2,2,0,0,0-2,2V571a2,2,0,0,0,2,2H839v39.9a2,2,0,0,0,2,2h16.4a2,2,0,0,0,2-2v-40h14.7a2,2,0,0,0,2-2v-15.8a2.05,2.05,0,0,0-2-2h-14.8v-9.2c0-4.4,1.1-6.7,6.8-6.7h8.4a2,2,0,0,0,2-2v-14.6A1.92,1.92,0,0,0,874.57,518.56Z" transform="translate(-824.47 -518.56)"/></svg>
                         Facebook
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/fnolomouc/">
                         <svg xmlns="http://www.w3.org/2000/svg" height="50%" fill="currentColor" class="bi bi-instagram"
                             viewBox="0 0 16 16">
                             <path
@@ -20,7 +20,7 @@ function Header() {
                         </svg>
                         Instagram
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/fnolomouc">
                         <svg xmlns="http://www.w3.org/2000/svg" height="50%" fill="currentColor" class="bi bi-twitter"
                             viewBox="0 0 16 16">
                             <path
