@@ -3258,7 +3258,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
        y="1035.14"
        width="16"
        height="16"
-       id="2_013" />
+       id="3_013" />
     <rect
        class="mista"
        x="1036.01"
@@ -3279,14 +3279,14 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
        y="1015.8"
        width="16"
        height="16"
-       id="2_014" />
+       id="3_014" />
     <rect
        class="mista"
        x="1080.27"
        y="996.78"
        width="16"
        height="16"
-       id="2_015" />
+       id="3_015" />
     <rect
        class="mista"
        x="1134.52"
@@ -3328,7 +3328,7 @@ const Map = ({ click, vybrane, obsazene, floor, isLoading }) => {
        y="996.78"
        width="16"
        height="16"
-       id="rect7178" />
+       id="2_010" />
     <rect
        class="mista"
        x="355.35"
