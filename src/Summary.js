@@ -6,22 +6,32 @@ import config from './config.json';
 
 const Summary = ({ vybrane, reset }) => {
 
-    const replaceUnderscore = (string) => { 
+    const replaceUnderscore = (string) => {
         return string.replace("_", "/");
-     }
+    }
 
-     const replaceUnderscoreArray = (array) => { 
+    const replaceUnderscoreArray = (array) => {
         const newArray = array.map((x) => replaceUnderscore(x));
         return newArray;
-      }
+    }
 
     const listItems = vybrane.map((number) =>
         <li key={number}>{replaceUnderscore(number)}</li>
     );
 
     var datum = new Date();
-    datum.setDate(datum.getDate() + config.delay_dny); // přidání dní
-    datum.setHours(23, 59, 0, 0); // nastavení na půlnoc
+    var delay_dny = config.delay_dny;
+
+    for (var i = 0; i < delay_dny; i++) {
+        datum.setDate(datum.getDate() + 1); // Přidat jeden den
+
+        // Kontrola, zda je datum víkend (sobota = 6, neděle = 0)
+        if (datum.getDay() === 6 || datum.getDay() === 0) {
+            delay_dny++; // Pokud ano, přidat další den k celkovému počtu
+        }
+    }
+
+    datum.setHours(23, 59, 0, 0); // Nastavení na půlnoc
     const expireDate = datum.getTime();
 
     const [email, setEmail] = useState("")
@@ -36,13 +46,13 @@ const Summary = ({ vybrane, reset }) => {
         setSaveSuccess(null);
 
         try {
-            await nahraniObjednavky(vybrane, email);
+            await nahraniObjednavky(vybrane, email, expireDate);
             setSaveSuccess(true);
 
             const to = email;
             const subject = config['email-predmet'];
-            const text = `Vaše vstupenky číslo ${replaceUnderscoreArray(vybrane).join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
-            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${replaceUnderscoreArray(vybrane).join(", ")}) vyzvedněte prosím <b>nejpozději dne ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
+            const text = `Vaše vstupenky číslo ${replaceUnderscoreArray(vybrane).join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA od pondělí 8. 1. 2024 v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
+            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${replaceUnderscoreArray(vybrane).join(", ")}) si vyzvedněte prosím <b>nejpozději do ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
             odeslatEmail(to, subject, text, html);
         } catch (error) {
             setSaveSuccess(false);
@@ -60,10 +70,10 @@ const Summary = ({ vybrane, reset }) => {
         }
     }, [vybrane])
 
-    const zobrazitDatum = (timestamp) => { 
-            var datum = new Date(timestamp);
-            return datum.toLocaleDateString('cs-CZ'); // pro české formátování
-     }
+    const zobrazitDatum = (timestamp) => {
+        var datum = new Date(timestamp);
+        return datum.toLocaleDateString('cs-CZ'); // pro české formátování
+    }
 
     return (
         <div className="">
@@ -106,7 +116,7 @@ const Summary = ({ vybrane, reset }) => {
             }
             {saveSuccess && !isSaving && // uloženo
                 <div className="summary summary-with-icon">
-                        
+
                     <div className="icon">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50%" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
@@ -114,8 +124,8 @@ const Summary = ({ vybrane, reset }) => {
                         </svg>
                     </div>
                     <div className="status">
-                    Vstupenky jsou úspěšně rezervované! <br />
-                        <strong>Vaše rezervované vstupenky vyzvedněte prosím nejpozději dne {`${zobrazitDatum(expireDate)}`} na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
+                        Vstupenky jsou úspěšně rezervované! <br />
+                        <strong>Vaše rezervované vstupenky si vyzvedněte prosím nejpozději do {`${zobrazitDatum(expireDate)}`} na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
                     </div>
                 </div>
             }
@@ -129,7 +139,7 @@ const Summary = ({ vybrane, reset }) => {
                         </svg>
                     </div>
                     <div className="status">
-                    Vstupenky se nepodařilo rezervovat! <br />
+                        Vstupenky se nepodařilo rezervovat! <br />
 
                         Vyberte si nové vstupenky v plánu sálu.
                     </div>

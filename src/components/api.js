@@ -1,6 +1,6 @@
 import config from '../config.json';
 
-export const nahraniObjednavky = async (vybrane, email) => {
+export const nahraniObjednavky = async (vybrane, email, expireDate) => {
     if (vybrane.length > 0) {
         try {
             const obsazene = await nacteniTicketu();
@@ -10,11 +10,6 @@ export const nahraniObjednavky = async (vybrane, email) => {
             if (isTicketTaken) {
                 throw new Error('Vybrané vstupenky jsou obsazené');
             }
-
-            var datum = new Date();
-            datum.setDate(datum.getDate() + config.delay_dny); // přidání dní
-            datum.setHours(23, 59, 0, 0); // nastavení na půlnoc
-            const expireDate = datum.getTime();
 
             // Příprava pole objektů pro vložení
             const ticketObjects = vybrane.map(ticket => ({
