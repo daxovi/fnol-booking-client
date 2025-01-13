@@ -3,6 +3,7 @@ import ticket from './ticket.jpg';
 import './Summary.css'
 import { nahraniObjednavky, odeslatEmail } from './components/api';
 import config from './config.json';
+import textJson from './text.json';
 
 const Summary = ({ vybrane, reset }) => {
 
@@ -51,8 +52,8 @@ const Summary = ({ vybrane, reset }) => {
 
             const to = email;
             const subject = config['email-predmet'];
-            const text = `Vaše vstupenky číslo ${replaceUnderscoreArray(vybrane).join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA od pondělí 8. 1. 2024 v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
-            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${replaceUnderscoreArray(vybrane).join(", ")}) si vyzvedněte prosím <b>nejpozději do ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
+            const text = `Vaše vstupenky číslo ${replaceUnderscoreArray(vybrane).join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA ${textJson.date_from} ${textJson.date_hours}. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
+            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${replaceUnderscoreArray(vybrane).join(", ")}) si vyzvedněte prosím <b>nejpozději do ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu ${textJson.date_hours}. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
             odeslatEmail(to, subject, text, html);
         } catch (error) {
             setSaveSuccess(false);
@@ -125,7 +126,7 @@ const Summary = ({ vybrane, reset }) => {
                     </div>
                     <div className="status">
                         Vstupenky jsou úspěšně rezervované! <br />
-                        <strong>Vaše rezervované vstupenky si vyzvedněte prosím nejpozději do {`${zobrazitDatum(expireDate)}`} na pokladně FN Olomouc v budově WA nahlášením vašeho emailu v pracovní dny v čase 9.00 – 12.00 a 12.30 - 14.30.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
+                        <strong>Vaše rezervované vstupenky si vyzvedněte prosím nejpozději do {`${zobrazitDatum(expireDate)}`} na pokladně FN Olomouc v budově WA nahlášením vašeho emailu {textJson.date_hours}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
                     </div>
                 </div>
             }

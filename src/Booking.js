@@ -5,6 +5,8 @@ import Summary from './Summary';
 import Step from './components/Step';
 import FloorSelector from './components/FloorSelector';
 import { nacteniTicketu } from './components/api';
+import text from './text.json';
+
 
 const Booking = () => {
 
@@ -66,22 +68,22 @@ const Booking = () => {
     return (
         <div className='booking'>
             <div>
-            Vítejte v rezervačním systému pro 23. reprezentační ples Fakultní nemocnice Olomouc! Máme radost, že máte zájem strávit tento výjimečný večer spolu s námi. Aby pro vás bylo zajištění vstupenek co nejpohodlnější, připravili jsme pro vás jednoduchý rezervační proces. V několika krocích si budete moci vybrat z různých typů míst, ať už upřednostňujete být v srdci dění na tanečním parketu nebo si užívat večer s výhledem z galerie. Postupujte krok po kroku a rezervujte si místa, která preferujete.
+            {text.vitejte}
             </div>
             <div className="row">
                 <Step number="1" name="Vyberte si podlaží" />
                 <p>
-                Začněte výběrem typu místa. Volit můžete mezi přízemím, tedy přímo u tanečního parketu, nebo galerií, která nabízí klidnější prostředí s výhledem na celý sál.
+                {text.step_one}
                 </p>
                 <FloorSelector floor={floor} setFloor={setFloor} />
                 <Step number="2" name="Vyberte si místa" />
                 <p>
-                Nyní přejděte k výběru konkrétních míst. Na interaktivním plánu sálu klikněte na místa, která si přejete rezervovat. Při výběru můžete vidět dostupnost míst a jejich vazbu na taneční parket. Každé vybrané místo bude automaticky přidáno do vaší rezervace. Pokud si chcete vybrat více míst vedle sebe, jednoduše na ně postupně klikněte.
+                {text.step_two}
                 </p>
                 <Map click={handleClick} vybrane={vybrane} obsazene={obsazene} floor={floor} isLoading={isLoading} />
                 <Step number="3" name="Dokončete rezervaci" />
                 <p>
-                    Téměř hotovo! Zkontrolujte svůj výběr vstupenek níže. Pro dokončení rezervace zadejte svůj email a klikněte na 'Rezervovat'.
+                {text.step_three}
                 </p>
                 <Summary vybrane={vybrane} reset={reset} />
             </div>
