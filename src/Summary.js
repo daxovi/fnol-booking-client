@@ -52,8 +52,8 @@ const Summary = ({ vybrane, reset }) => {
 
             const to = email;
             const subject = config['email-predmet'];
-            const text = `Vaše vstupenky číslo ${replaceUnderscoreArray(vybrane).join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA ${textJson.date_from} ${textJson.date_hours}. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná.`;
-            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${replaceUnderscoreArray(vybrane).join(", ")}) si vyzvedněte prosím <b>nejpozději do ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu ${textJson.date_hours}. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p>`
+            const text = `Vaše vstupenky číslo ${replaceUnderscoreArray(vybrane).join(", ")} jsou rezervované. Vyzvedněte si je po nahlášení vašeho emailu ${email} na pokladně FN Olomouc v budově WA ${textJson.date_from} ${textJson.date_hours}. , nejpozději ${zobrazitDatum(expireDate)}. Po tomto datu bude vaše rezervace stornovaná. Úhradu ceny vstupenek (1.000 Kč/ks) upřednostňujeme platební kartou. Zakoupené vstupenky není možné vracet. Děkujeme za pochopení.`;
+            const html = `<h1>Vstupenky jsou úspěšně rezervované!</h1><p>Vaše rezervované vstupenky (${replaceUnderscoreArray(vybrane).join(", ")}) si vyzvedněte prosím <b>nejpozději do ${zobrazitDatum(expireDate)}</b> na pokladně FN Olomouc v budově WA nahlášením vašeho emailu ${textJson.date_hours}. <b>Po tomto datu bude vaše rezervace stornovaná.</b></p><p>Úhradu ceny vstupenek (1.000 Kč/ks) upřednostňujeme platební kartou. Zakoupené vstupenky není možné vracet.</p><p>Děkujeme za pochopení.</p>`
             odeslatEmail(to, subject, text, html);
         } catch (error) {
             setSaveSuccess(false);
@@ -126,7 +126,7 @@ const Summary = ({ vybrane, reset }) => {
                     </div>
                     <div className="status">
                         Vstupenky jsou úspěšně rezervované! <br />
-                        <strong>Vaše rezervované vstupenky si vyzvedněte prosím nejpozději do {`${zobrazitDatum(expireDate)}`} na pokladně FN Olomouc v budově WA nahlášením vašeho emailu {textJson.date_hours}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná.
+                        <strong>Vaše rezervované vstupenky si vyzvedněte prosím nejpozději do {`${zobrazitDatum(expireDate)}`} na pokladně FN Olomouc v budově WA nahlášením vašeho emailu {textJson.date_hours}.</strong> <br /> Po tomto datu bude vaše rezervace stornovaná. <br /> Úhradu ceny vstupenek (1.000 Kč/ks) upřednostňujeme platební kartou. Zakoupené vstupenky není možné vracet. <br />Děkujeme za pochopení.
                     </div>
                 </div>
             }
