@@ -1,6 +1,6 @@
 {
   "name": "fnol-booking-client",
-  "homepage": "https://www.plesfnol.cz/rezervace1304",
+  "homepage": "https://www.plesfnol.cz/rezervace",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
